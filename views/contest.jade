@@ -5,11 +5,12 @@ block content
 		div.container.bg-transparent(style="border-top: none; border-bottom: none")
 			div.row
 				div.col-xs-offset-2.col-sm-offset-4.col-sm-6.col-md-offset-9.col-md-3.col-xs-8
-					.btn-group.btn-group-lg
-						a.btn.btn-danger View results
-						a.btn.btn-danger Log out
-				
-			img.img-center.img-responsive.header-logo(src="/images/logo.png", alt="MUAS").hidden-sm
+					//- .btn-group.btn-group-lg
+						//- a.btn.btn-danger View results
+					a.pull-right.btn.btn-info.btn-sm Log out
+			
+			//The school's logo
+			img.img-center.img-responsive.header-logo.hidden-xs(src="/images/logo.png", alt="MUAS").hidden-sm
 			//Display the introduction message
 			div.message-box.clearfix
 				.first-line: p Management University of Africa Awards
@@ -24,7 +25,7 @@ block content
 						li: p Sports Person
 
 	section#portfolio
-		div.bg-light.padding-bottom
+		div.bg-light
 			.container
 				div.section-header.scrollimation.fade-up.in
 					div.section-icon: i.fa.fa-trophy
@@ -32,7 +33,7 @@ block content
 					p.section-description.lead Non-votable categories
 
 				div.row
-					div.col-md-6.col-sm-12
+					div.col-sm-6.col-sm-12
 						div.row
 							div.col-sm-3.col-xs-12
 								img(src="/images/gallery/3527082662734274.png").img-responsive.img-thumbnail
@@ -99,46 +100,40 @@ block content
 
 		div.bg-light.padding-bottom
 			// The contestant wrapper
-			.container
+			.container.masonry
+				.alert.alert-danger
+					p 
+						strong PLEASE NOTE:  
+						| You can only <b>vote</b> for a single candidate in each of the categories listed below.
+
 				.row
 					//loop through the categories data
-					for x in categories 
-						.col-xs-12
+					//- - var student = data.student;
+					for x in data.categories 
+						.col-xs-12.container
 							.page-header
-								h2 Category: #{x.category}
+								h3 Category: #{x.category}
 
 							- var id = 0; //their IDs are as they are listed in the Array
+							- var border = ["panel-default", "panel-info", "panel-warning", "panel-success", "panel-danger", "panel-warning"];
 							for contestant in x.contestants
 								- id++ //1st ID == 1
-								div.col-xs-12.col-sm-3
+								div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant
 									.panel.panel-warning
 										.panel-heading
-											h3.panel-title.smaller #{x.category}
+											h3(data-abbr="#{x.abbr}").grey.panel-title.smaller #{x.category}
 										.panel-body
 											div.media
-												a.pull-left(href="#")
-													img.img.media-object(src="/images/gallery/3527082662734274.png", width="120px")
+												div.pull-left
+													img.img.media-object.project-thumb(src="/images/gallery/3527082662734274.png", width="96px")
 												div.media-body.orange
 													h4.media-heading.orange #{contestant}
-													a.btn.btn-primary.btn-sm(role="button", href="#", data-id="#{id}") Vote
+													a.btn.btn-primary.btn-sm.vote-for-contestant(
+														data-id="#{id}", 
+														data-category="#{x.category}",
+														data-abbr="#{x.abbr}", 
+														data-studentId="#{data.student.id}",
+														data-studentEmail="#{data.student.emailaddress}")
+														i.icon-ok 
+														| Vote
 														//- a.btn.btn-default.btn-sm(role="button", href="#") Cancel Vote
-
-			//- .container.masonry-wrapper
-			//- 	.masonry#projects-container(class="")
-			//- 		//- loop thru the CONTESTANTS session
-			//- 		for x in watu 
-			//- 			//- the contestants
-			//- 			for contestant in x.contestants
-			//- 				article.project-item.web-design.image
-			//- 					a(href="#")
-			//- 						img.img-responsive.project-thumb(src="/images/gallery/3527082662734274.png")
-			//- 						div.details
-			//- 							h3.project-title #{contestant}
-			//- 							small #{x.category}
-
-			//- 					//The project details
-			//- 					.sr-only
-			//- 						.project-media(data-images="/images/gallery/3527082662734274.png")
-			//- 						.project-attributes
-			//- 							.newline: span Category: #{x.category}
-			//- 						.project-description

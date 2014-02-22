@@ -24,18 +24,11 @@ module.exports = {
     //checks if the user is logged in and redirects to appropriate link
     index: function(req, res) {
         if (req.signedCookies.muasaStudent) {
-            try {
-                res.render('contest', {
-                    categories: req.session.CONTESTANTS
-                });
-            } catch (err) {
-                console.log(err)
-            }
+            res.redirect('/contest');
         } else {
             res.redirect('/hello');
         }
     },
-
 
     /**
      * Action blueprints:
@@ -45,8 +38,8 @@ module.exports = {
         Student.create(req.params.all(), function createStudent(err, student) {
             if (err) return next(err);
             //Student has been created, redirect back so as they can login
-            // res.redirect('/');
-            res.json(req.params.all());
+            res.redirect('/');
+            // res.json(req.params.all());
         });
     },
 
@@ -108,28 +101,20 @@ module.exports = {
         res.redirect('/');
     },
 
-
-    /**
-     * Action blueprints:
-     *    `/student/vote`
-     */
-    vote: function(req, res) {
-
-    },
-
     delete: function(req, res, next) {
         Student.destroy({
             emailaddress: req.signedCookie.muasaStudent.emailaddress
         }).done(function(err) {
             if (err) return next(err);
-            console.log("DB destroyed", req.params)
+            console.log("DB destroyed", req.params.all());
         });
     },
 
     cookies: function(req, res) {
         res.json({
             others: req.cookies,
-            signed: req.signedCookies
+            signed: req.signedCookies,
+            session: req.session.muasaStudent || false
         })
     },
 

@@ -39,7 +39,8 @@ module.exports.routes = {
     },
 
     '/contest': {
-        view: 'contest'
+      controller: 'VotedonController', 
+      action: 'loadContestants'
     },
 
     '/cookies': {

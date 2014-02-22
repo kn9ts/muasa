@@ -8,15 +8,19 @@
 
 var CategoriesVotedFor = {
     attributes: {
-        email: {
+        studentid: {
             type: "string",
             required: true
         },
-        idno: {
+        studentemail: {
             type: "string",
             required: true
         },
         category: {
+            type: "string",
+            required: true
+        },
+        abbr: {
             type: "string",
             required: true
         }

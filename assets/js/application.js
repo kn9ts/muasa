@@ -1,4 +1,18 @@
-$(document).ready(function() {
+$(function() {
+
+    //When user votes
+    $('.vote-for-contestant').click(function(event) {
+        // event.preventDefault();
+        var el = $(this);
+        var data = el.data();
+        console.log(data);
+        $.post('/votedon/castvote', data, function() {
+            //do nothing
+        }, 'json').done(function(response) {
+
+        })
+        return false;
+    });
 
     // ------ ADD BACKGROUND IMAGES --------
     var backImages = $('#backgrounds').data('backgrounds').split(',');

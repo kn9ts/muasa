@@ -17,9 +17,8 @@ module.exports.policies = {
     // (`true` allows public access) 
     '*': true,
 
-    'StudentController': {
-        '*': ["supportcors", "contestants"]
-    },
+    //All controllers should be fed these functions
+    '*': ["supportCors", "Contestants", "isAuthenticated"],
 
     /*
 	// Here's an example of adding some policies to a controller
