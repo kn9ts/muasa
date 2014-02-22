@@ -1,0 +1,99 @@
+{
+  "data": {
+    "contestants": [],
+    "student": [
+      {
+        "fullnames": "Jhene Knights",
+        "idno": "90192909",
+        "phonenumber": "0723001576",
+        "emailaddress": "jhenetic@gmail.com",
+        "encryptedPassword": "$2a$10$3cghQlGN4Q22JDsNXdRjwuQ6Vn0XHiSJhEcKevK7BOjBzk6Zggtmq",
+        "_csrf": "true",
+        "createdAt": "2014-02-16T23:24:03.839Z",
+        "updatedAt": "2014-02-16T23:24:03.839Z",
+        "id": 1
+      },
+      {
+        "fullnames": "Eugene Mutai",
+        "idno": "28097308",
+        "phonenumber": "0723001575",
+        "emailaddress": "eugenemutai@gmail.com",
+        "encryptedPassword": "$2a$10$Ls6PN5nURQ4Fj4TwgNk3.OplPBabFv4F/Svd6Q7d0C9pnDT6iXrZK",
+        "_csrf": "true",
+        "createdAt": "2014-02-17T00:57:33.055Z",
+        "updatedAt": "2014-02-17T00:57:33.055Z",
+        "id": 2
+      }
+    ]
+  },
+  "schema": {
+    "contestants": {
+      "name": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "image": {
+        "type": "string"
+      },
+      "votes": {
+        "type": "integer"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "defaultsTo": "AUTO_INCREMENT",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime",
+        "default": "NOW"
+      },
+      "updatedAt": {
+        "type": "datetime",
+        "default": "NOW"
+      }
+    },
+    "student": {
+      "fullnames": {
+        "type": "string"
+      },
+      "idno": {
+        "type": "string"
+      },
+      "phonenumber": {
+        "type": "string"
+      },
+      "emailaddress": {
+        "type": "string",
+        "unique": true
+      },
+      "encryptedPassword": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "defaultsTo": "AUTO_INCREMENT",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime",
+        "default": "NOW"
+      },
+      "updatedAt": {
+        "type": "datetime",
+        "default": "NOW"
+      }
+    }
+  },
+  "counters": {
+    "contestants": {},
+    "student": {
+      "id": 2
+    }
+  }
+}
