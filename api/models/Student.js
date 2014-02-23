@@ -24,7 +24,7 @@ var Student = {
         phonenumber: {
             type: 'string',
             required: true,
-            regex: /^(\+)?(254|0)[\d]+$/,
+            regex: /^(\+)?(254|0)[\d]{6,}$/,
             minLength: 10
         },
 

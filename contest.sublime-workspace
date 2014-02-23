@@ -4,8 +4,160 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text/javascript"
+			],
+			[
+				"scr",
+				"script"
+			],
+			[
+				"acti",
+				"active"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"prog",
+				"progress-bar"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"con",
+				"contestant"
+			],
+			[
+				"tota",
+				"totalvotes"
+			],
+			[
+				"cont",
+				"contestantid"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"co",
+				"contestantid"
+			],
+			[
+				"parse",
+				"parseInt	jsGlobal"
+			],
+			[
+				"tot",
+				"totalvotespercat"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"Con",
+				"ContestantsController"
+			],
+			[
+				"Contesta",
+				"ContestantsController"
+			],
+			[
+				"contes",
+				"contestantid"
+			],
+			[
+				"voted",
+				"votedfor"
+			],
+			[
+				"stude",
+				"student"
+			],
+			[
+				"CON",
+				"CONTESTANTS"
+			],
+			[
+				"c",
+				"contestant"
+			],
+			[
+				"conte",
+				"contestantid"
+			],
+			[
+				"D",
+				"Deferred"
+			],
+			[
+				"re",
+				"req"
+			],
+			[
+				"pro",
+				"promise"
+			],
+			[
+				"retr",
+				"return"
+			],
+			[
 				"cons",
 				"console"
+			],
+			[
+				"C",
+				"CONTESTANTS"
+			],
+			[
+				"data",
+				"data-contestantid"
+			],
+			[
+				"modl",
+				"module"
+			],
+			[
+				"check",
+				"checkDB"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"cos",
+				"console"
+			],
+			[
+				"destr",
+				"destroy"
+			],
+			[
+				"Contest",
+				"Contestants"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"param",
+				"params"
+			],
+			[
+				"ty",
+				"type=\"text"
 			],
 			[
 				"cono",
@@ -16,16 +168,8 @@
 				"emailaddress"
 			],
 			[
-				"data",
-				"data-studentId"
-			],
-			[
 				"st",
 				"student"
-			],
-			[
-				"cate",
-				"categories"
 			],
 			[
 				"req",
@@ -56,20 +200,12 @@
 				"VotedonController"
 			],
 			[
-				"conte",
-				"contestant"
-			],
-			[
 				"act",
 				"action"
 			],
 			[
 				"ea",
 				"emailaddress"
-			],
-			[
-				"cont",
-				"contestant"
 			],
 			[
 				"contest",
@@ -84,10 +220,6 @@
 				"Votedon"
 			],
 			[
-				"con",
-				"container"
-			],
-			[
 				"sig",
 				"signedCookies"
 			],
@@ -100,20 +232,12 @@
 				"panel-warning"
 			],
 			[
-				"pro",
-				"projects-container"
-			],
-			[
 				"proj",
 				"project-thumb"
 			],
 			[
 				"proje",
 				"project-item"
-			],
-			[
-				"c",
-				"category"
 			],
 			[
 				"th",
@@ -126,14 +250,6 @@
 			[
 				"leng",
 				"length"
-			],
-			[
-				"Contest",
-				"CONTESTANTS"
-			],
-			[
-				"contes",
-				"contestants"
 			],
 			[
 				"que",
@@ -176,10 +292,6 @@
 				"encryptedPassword"
 			],
 			[
-				"res",
-				"resolve"
-			],
-			[
 				"encr",
 				"encryptPassword"
 			],
@@ -204,14 +316,6 @@
 				"fade"
 			],
 			[
-				"Con",
-				"Contestant"
-			],
-			[
-				"ty",
-				"type"
-			],
-			[
 				"bg-",
 				"bg-transparent"
 			],
@@ -230,10 +334,6 @@
 			[
 				"prev",
 				"preview"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"col-sm-",
@@ -318,10 +418,6 @@
 			[
 				"One",
 				"OneLinkNoTx"
-			],
-			[
-				"re",
-				"replace"
 			],
 			[
 				"quet",
@@ -416,104 +512,8 @@
 				"disabled"
 			],
 			[
-				"co",
-				"container"
-			],
-			[
 				"form",
 				"form-group"
-			],
-			[
-				"tex",
-				"text/javascript"
-			],
-			[
-				"sty",
-				"stylesheet"
-			],
-			[
-				"ret",
-				"return"
-			],
-			[
-				"labe",
-				"label-lg"
-			],
-			[
-				"dis",
-				"disabledOrder"
-			],
-			[
-				"dia",
-				"disabled"
-			],
-			[
-				"bi",
-				"bigger"
-			],
-			[
-				"widget-he",
-				"widget-header-flat"
-			],
-			[
-				"wi",
-				"widget"
-			],
-			[
-				"ora",
-				"orange"
-			],
-			[
-				"padd",
-				"padding-right"
-			],
-			[
-				"pull",
-				"pull-left"
-			],
-			[
-				"ino",
-				"infobox"
-			],
-			[
-				"perce",
-				"percent"
-			],
-			[
-				"info",
-				"infobox"
-			],
-			[
-				"progre",
-				"progress-bar"
-			],
-			[
-				"ligh",
-				"lighter"
-			],
-			[
-				"wid",
-				"widget"
-			],
-			[
-				"key",
-				"keyboard"
-			],
-			[
-				"stat",
-				"static"
-			],
-			[
-				"bac",
-				"backdrop"
-			],
-			[
-				"C",
-				"Confirm"
-			],
-			[
-				"moda",
-				"modal"
 			]
 		]
 	},
@@ -523,15 +523,15 @@
 			"file": "views/contest.jade",
 			"settings":
 			{
-				"buffer_size": 4401,
+				"buffer_size": 6513,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "api/controllers/VotedonController.js",
+			"file": "config/routes.js",
 			"settings":
 			{
-				"buffer_size": 2313,
+				"buffer_size": 5012,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,55 +539,23 @@
 			"file": "api/controllers/StudentController.js",
 			"settings":
 			{
-				"buffer_size": 4064,
+				"buffer_size": 3820,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "api/models/Votedon.js",
+			"file": "api/controllers/ContestantsController.js",
 			"settings":
 			{
-				"buffer_size": 621,
+				"buffer_size": 10903,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "api/models/Votingdb.js",
+			"file": "api/policies/Contestants.js",
 			"settings":
 			{
-				"buffer_size": 728,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/js/appController.js",
-			"settings":
-			{
-				"buffer_size": 304,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/policies.js",
-			"settings":
-			{
-				"buffer_size": 2817,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/includes/scripts.jade",
-			"settings":
-			{
-				"buffer_size": 620,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/js/application.js",
-			"settings":
-			{
-				"buffer_size": 7193,
+				"buffer_size": 2436,
 				"line_ending": "Unix"
 			}
 		},
@@ -595,7 +563,31 @@
 			"file": "api/policies/isAuthenticated.js",
 			"settings":
 			{
-				"buffer_size": 889,
+				"buffer_size": 964,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "api/models/Contestants.js",
+			"settings":
+			{
+				"buffer_size": 751,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "api/models/Votedon.js",
+			"settings":
+			{
+				"buffer_size": 627,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.jade",
+			"settings":
+			{
+				"buffer_size": 3452,
 				"line_ending": "Unix"
 			}
 		}
@@ -660,25 +652,35 @@
 	},
 	"file_history":
 	[
-		"/Volumes/My Stuff/Websites/lab/voting/assets/css/bootstrap.min-yeti.css",
-		"/Volumes/My Stuff/Websites/lab/voting/assets/css/docs.min.css",
-		"/Volumes/My Stuff/Websites/lab/voting/assets/js/application.js",
+		"/Volumes/My Stuff/Websites/lab/voting/assets/css/application.css",
+		"/Volumes/My Stuff/Websites/lab/voting/config/adapters.js",
+		"/Volumes/My Stuff/Websites/lab/voting/api/models/Votedon.js",
+		"/Volumes/My Stuff/Websites/lab/voting/api/models/Student.js",
+		"/Volumes/My Stuff/Websites/lab/voting/api/models/Contestants.js",
+		"/Volumes/My Stuff/Websites/lab/voting/api/controllers/VotedonController.js",
+		"/Volumes/My Stuff/Websites/lab/voting/api/models/Votingdb.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/policies/isAuthenticated.js",
+		"/Volumes/My Stuff/Websites/lab/voting/assets/js/application.js",
+		"/Volumes/My Stuff/Websites/lab/voting/assets/js/appController.js",
+		"/Volumes/My Stuff/Websites/lab/voting/api/policies/supportCors.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/policies/isLoggedin.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/policies/Contestants.js",
-		"/Volumes/My Stuff/Websites/lab/voting/api/policies/supportCors.js",
+		"/Volumes/My Stuff/Websites/lab/voting/config/policies.js",
+		"/Volumes/My Stuff/Websites/lab/voting/config/session.js",
+		"/Volumes/My Stuff/Websites/lab/voting/config/sockets.js",
+		"/Volumes/My Stuff/Websites/lab/voting/views/includes/header.jade",
+		"/Volumes/My Stuff/Websites/lab/voting/views/includes/scripts.jade",
+		"/Volumes/My Stuff/Websites/lab/voting/assets/css/bootstrap.min-yeti.css",
+		"/Volumes/My Stuff/Websites/lab/voting/assets/css/docs.min.css",
 		"/Volumes/My Stuff/Websites/lab/voting/views/index.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/config/routes.js",
 		"/Volumes/My Stuff/Websites/lab/voting/assets/css/bootstrap.min.css",
-		"/Volumes/My Stuff/Websites/lab/voting/views/includes/header.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/app.js",
 		"/Users/mac/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/mac/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Volumes/My Stuff/Websites/lab/voting/config/404.js",
 		"/Volumes/My Stuff/Websites/lab/voting/config/500.js",
-		"/Volumes/My Stuff/Websites/lab/voting/api/controllers/VotedonController.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/controllers/VotingdbController.js",
-		"/Volumes/My Stuff/Websites/lab/voting/config/policies.js",
 		"/Volumes/My Stuff/Websites/lab/voting/assets/css/shapes-orange.css",
 		"/Volumes/My Stuff/Websites/lab/voting/.gitignore",
 		"/Volumes/My Stuff/Websites/lab/voting/npm-shrinkwrap.json",
@@ -687,11 +689,8 @@
 		"/Volumes/My Stuff/Websites/lab/voting/npm-debug.log",
 		"/Volumes/My Stuff/Websites/lab/voting/config/log.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/policies/contestants.js",
-		"/Volumes/My Stuff/Websites/lab/voting/api/models/Votingdb.js",
-		"/Volumes/My Stuff/Websites/lab/voting/api/models/Student.js",
 		"/Volumes/My Stuff/Websites/lab/voting/views/contest.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/api/controllers/StudentController.js",
-		"/Volumes/My Stuff/Websites/lab/voting/api/models/Votedon.js",
 		"/Volumes/My Stuff/Websites/lab/voting/config/controllers.js",
 		"/Volumes/My Stuff/Websites/lab/voting/config/cors.js",
 		"/Volumes/My Stuff/Websites/lab/voting/extractor.js",
@@ -699,11 +698,8 @@
 		"/Volumes/My Stuff/Websites/lab/voting/views/403.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/views/404.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/views/500.jade",
-		"/Volumes/My Stuff/Websites/lab/voting/api/models/Contestants.js",
 		"/Volumes/My Stuff/Websites/lab/voting/Gruntfile.js",
-		"/Volumes/My Stuff/Websites/lab/voting/views/includes/scripts.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/Procfile",
-		"/Volumes/My Stuff/Websites/lab/voting/config/adapters.js",
 		"/Volumes/My Stuff/Websites/lab/voting/config/local.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/policies/encryptPassword.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/policies/encryptPasswords.js",
@@ -715,10 +711,7 @@
 		"/Volumes/My Stuff/Websites/lab/voting/config/csrf.js",
 		"/Volumes/My Stuff/Websites/lab/voting/assets/js/waypoints.min.js",
 		"/Volumes/My Stuff/Websites/lab/voting/config/views.js",
-		"/Volumes/My Stuff/Websites/lab/voting/config/sockets.js",
-		"/Volumes/My Stuff/Websites/lab/voting/config/session.js",
 		"/Volumes/My Stuff/Websites/lab/voting/config/i18n.js",
-		"/Volumes/My Stuff/Websites/lab/voting/assets/css/application.css",
 		"/Volumes/My Stuff/Websites/lab/voting/assets/js/my/application.js",
 		"/Volumes/My Stuff/Websites/lab/voting/views/home/index.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/views/home/index-sails.jade",
@@ -786,8 +779,7 @@
 		"/Users/mac/Apps/vitumob/chrome/docs/background.js",
 		"/Users/mac/Apps/vitumob/skin/skin.css",
 		"/Users/mac/Apps/vitumob/defaults/install.rdf",
-		"/Users/mac/Apps/vitumob/chrome/chrome.manifest",
-		"/Users/mac/Apps/vitumob/chrome/main.xul"
+		"/Users/mac/Apps/vitumob/chrome/chrome.manifest"
 	],
 	"find":
 	{
@@ -808,6 +800,101 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"warning",
+			"info",
+			"danger",
+			"nth",
+			"pills",
+			"active",
+			"load",
+			"window",
+			"first",
+			"active",
+			"Results",
+			"Category",
+			"72px",
+			"48px",
+			"blue",
+			"info",
+			"success",
+			"info",
+			"warning",
+			"contestant",
+			"castedvotespercat",
+			"json",
+			"vf",
+			"totalvotes",
+			"abbr",
+			"category",
+			"totalvotespercat",
+			"category_results",
+			"response",
+			"group",
+			"g",
+			"abbr",
+			"vfor",
+			"ContestantsController",
+			"module.exports",
+			"req",
+			"countVotes",
+			"groupBy",
+			"response",
+			"warning",
+			"log",
+			"response",
+			"filter",
+			"response",
+			"CONTESTANTS",
+			"reqmuasaStudent",
+			"..",
+			"signedCookies",
+			"CONTESTANTS",
+			"arrayCount",
+			"votes",
+			"uc",
+			"total",
+			"filter",
+			"findWhere",
+			"votes",
+			"category",
+			"cat",
+			"abbr",
+			"cats",
+			"abbr",
+			"response",
+			"results",
+			"resp",
+			"cats",
+			"expires",
+			"cat",
+			"cats",
+			"inArray",
+			"session",
+			"signedCookies",
+			"uc",
+			"warning",
+			"children",
+			"siblings",
+			"results",
+			"done",
+			"category",
+			"Votedon",
+			"json",
+			"integer",
+			"student",
+			"studentemail",
+			"emailaddress",
+			"votedon",
+			"user",
+			"loadContestants",
+			"Votingdb",
+			"VoteDB",
+			"loadContestants",
+			"post",
+			"hello",
+			"next",
+			"StudentController",
+			"catch",
 			"danger",
 			"alert",
 			"votecontrol",
@@ -840,102 +927,7 @@
 			"warni",
 			"warning",
 			"item",
-			"project-item",
-			"watu",
-			"default",
-			"smaller",
-			"block",
-			"responsive",
-			"caption",
-			"project",
-			"warning",
-			"primary",
-			"yeti",
-			"button",
-			"verbose",
-			"info",
-			"category",
-			"name",
-			"redirect",
-			"length",
-			"watu",
-			"contestants",
-			"log",
-			"abbr",
-			"isAuthenticated",
-			"contestants",
-			"CBD",
-			"VM595:12",
-			"VM592:12",
-			"VM592",
-			"info",
-			"danger",
-			"default",
-			"flaty",
-			"warning",
-			"default",
-			"theme",
-			" \n",
-			"logout",
-			"suitcase",
-			"blockquote",
-			"yeti",
-			"circle",
-			"voting",
-			"Contestants",
-			"cookies",
-			"voting",
-			"index",
-			"voting",
-			"welcome",
-			"index",
-			"sails",
-			"url",
-			"res",
-			"voting",
-			"hash",
-			"values",
-			"params",
-			"values",
-			"password",
-			"response",
-			"values.encryptedPassword",
-			"beforeCreate",
-			"mongo",
-			"integer",
-			"verbose",
-			"info",
-			"back",
-			"remove",
-			"this",
-			"margin",
-			"0",
-			"clearfix",
-			"href",
-			"dark",
-			"rounded",
-			"mail",
-			"Year",
-			"Phone",
-			"fullnames",
-			"project",
-			"theme",
-			"large",
-			"button",
-			"btn-theme",
-			"loader",
-			"featuredUsers",
-			"center",
-			"section",
-			"scrollSpyRefresh",
-			"content",
-			")\n",
-			"info",
-			"student",
-			")\n",
-			"text",
-			"Log",
-			"password"
+			"project-item"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -954,7 +946,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -962,15 +954,15 @@
 					"file": "views/contest.jade",
 					"settings":
 					{
-						"buffer_size": 4401,
+						"buffer_size": 6513,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4044,
-								4044
+								3378,
+								3378
 							]
 						],
 						"settings":
@@ -1082,26 +1074,26 @@
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 267.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 1558.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "api/controllers/VotedonController.js",
+					"file": "config/routes.js",
 					"settings":
 					{
-						"buffer_size": 2313,
+						"buffer_size": 5012,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1326,
-								1326
+								141,
+								141
 							]
 						],
 						"settings":
@@ -1211,11 +1203,11 @@
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 445.0,
+						"translation.y": 401.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1225,15 +1217,15 @@
 					"file": "api/controllers/StudentController.js",
 					"settings":
 					{
-						"buffer_size": 4064,
+						"buffer_size": 3820,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3444,
-								3444
+								1586,
+								1586
 							]
 						],
 						"settings":
@@ -1347,25 +1339,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1431.0,
+						"translation.y": 1009.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "api/models/Votedon.js",
+					"file": "api/controllers/ContestantsController.js",
 					"settings":
 					{
-						"buffer_size": 621,
+						"buffer_size": 10903,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								507,
-								507
+								4027,
+								4027
 							]
 						],
 						"settings":
@@ -1479,25 +1471,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2363.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "api/models/Votingdb.js",
+					"file": "api/policies/Contestants.js",
 					"settings":
 					{
-						"buffer_size": 728,
+						"buffer_size": 2436,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								417,
-								417
+								306,
+								306
 							]
 						],
 						"settings":
@@ -1618,148 +1610,18 @@
 				},
 				{
 					"buffer": 5,
-					"file": "assets/js/appController.js",
+					"file": "api/policies/isAuthenticated.js",
 					"settings":
 					{
-						"buffer_size": 304,
+						"buffer_size": 964,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								212,
-								212
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "config/policies.js",
-					"settings":
-					{
-						"buffer_size": 2817,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								756,
-								756
+								674,
+								674
 							]
 						],
 						"settings":
@@ -1869,20 +1731,285 @@
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 166.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "api/models/Contestants.js",
+					"settings":
+					{
+						"buffer_size": 751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "views/includes/scripts.jade",
+					"file": "api/models/Votedon.js",
 					"settings":
 					{
-						"buffer_size": 620,
+						"buffer_size": 627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "views/index.jade",
+					"settings":
+					{
+						"buffer_size": 3452,
 						"regions":
 						{
 						},
@@ -1999,274 +2126,11 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "assets/js/application.js",
-					"settings":
-					{
-						"buffer_size": 7193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								355,
-								355
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "api/policies/isAuthenticated.js",
-					"settings":
-					{
-						"buffer_size": 889,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								650,
-								650
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 195.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2337,7 +2201,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 229.0,
 	"status_bar_visible": true
 }

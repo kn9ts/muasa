@@ -16,8 +16,6 @@
  */
 
 var bcrypt = require('bcrypt');
-// var promise = require('promised-io/promise');
-// Deferred = promise.Deferred; //will handle asychronous file flows
 
 module.exports = {
 
@@ -53,41 +51,40 @@ module.exports = {
         console.log(p);
 
         Student.findOne({
-                emailaddress: p.emailaddress
-            },
-            function foundStudent(err, student) {
-                if (err)
-                    res.json({
-                        status: 500,
-                        hello: 'Oops! Not sure, what happened. We are as shocked as you are.'
-                    });
-
-                //on successful studen retrival
-                if (student) {
-                    //Validate user password
-                    bcrypt.compare(p.encryptedPassword, student.encryptedPassword, function(err, isEqual) {
-                        if (err) return next(err);
-                        if (isEqual) { //is the password validly equal to its encrypted version
-                            // res == true
-                            res.cookie('muasaStudent', student, {
-                                expires: new Date(Date.now() + 604800),
-                                httpOnly: true,
-                                signed: true
-                            });
-                            res.redirect('/');
-                        } else {
-                            res.json({
-                                account: student,
-                                passwordValid: isEqual
-                            });
-                        }
-                    });
-                } else res.json({
-                    status: 404,
-                    hello: 'We have no records of such an account in our database.',
-                    data: p
+            emailaddress: p.emailaddress
+        }).done(function foundStudent(err, student) {
+            if (err)
+                res.json({
+                    status: 500,
+                    hello: 'Oops! Not sure, what happened. We are as shocked as you are.'
                 });
+
+            //on successful studen retrival
+            if (student) {
+                //Validate user password
+                bcrypt.compare(p.encryptedPassword, student.encryptedPassword, function(err, isEqual) {
+                    if (err) return next(err);
+                    if (isEqual) { //is the password validly equal to its encrypted version
+                        // res == true
+                        res.cookie('muasaStudent', student, {
+                            maxAge: new Date(Date.now() + 6048000),
+                            httpOnly: true,
+                            signed: true
+                        });
+                        res.redirect('/');
+                    } else {
+                        res.json({
+                            account: student.emailaddress,
+                            passwordValid: isEqual
+                        });
+                    }
+                });
+            } else res.json({
+                status: 404,
+                hello: 'We have no records of such an account in our database.',
+                data: p
             });
+        });
     },
 
 

@@ -7,7 +7,7 @@ block content
 				div.col-xs-offset-2.col-sm-offset-4.col-sm-6.col-md-offset-9.col-md-3.col-xs-8
 					//- .btn-group.btn-group-lg
 						//- a.btn.btn-danger View results
-					a.pull-right.btn.btn-info.btn-sm Log out
+					a.pull-right.btn.btn-info.btn-sm(href="/student/logout") Log out
 			
 			//The school's logo
 			img.img-center.img-responsive.header-logo.hidden-xs(src="/images/logo.png", alt="MUAS").hidden-sm
@@ -97,28 +97,18 @@ block content
 									span.preview-title Jhene Knights
 
 					//- #preview-content
-
 		div.bg-light.padding-bottom
-			// The contestant wrapper
 			.container.masonry
-				.alert.alert-danger
-					p 
-						strong PLEASE NOTE:  
-						| You can only <b>vote</b> for a single candidate in each of the categories listed below.
-
 				.row
-					//loop through the categories data
-					//- - var student = data.student;
-					for x in data.categories 
-						.col-xs-12.container
+					- if(data.votedfor.length !== 0) {
+					//The ones the user has voted for, results
+					.col-xs-12(data-results="true")
+						.row
 							.page-header
-								h3 Category: #{x.category}
-
-							- var id = 0; //their IDs are as they are listed in the Array
-							- var border = ["panel-default", "panel-info", "panel-warning", "panel-success", "panel-danger", "panel-warning"];
-							for contestant in x.contestants
-								- id++ //1st ID == 1
-								div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant
+								h3 Current results of your prefered candidates
+							//loop through the candidate chosen
+							for x in data.votedfor
+								div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.pull-left(data-contestantid="#{id + x.abbr}")
 									.panel.panel-warning
 										.panel-heading
 											h3(data-abbr="#{x.abbr}").grey.panel-title.smaller #{x.category}
@@ -127,13 +117,71 @@ block content
 												div.pull-left
 													img.img.media-object.project-thumb(src="/images/gallery/3527082662734274.png", width="96px")
 												div.media-body.orange
-													h4.media-heading.orange #{contestant}
-													a.btn.btn-primary.btn-sm.vote-for-contestant(
-														data-id="#{id}", 
-														data-category="#{x.category}",
-														data-abbr="#{x.abbr}", 
-														data-studentId="#{data.student.id}",
-														data-studentEmail="#{data.student.emailaddress}")
-														i.icon-ok 
-														| Vote
-														//- a.btn.btn-default.btn-sm(role="button", href="#") Cancel Vote
+													h4.media-heading.orange #{x.name}
+													h2.green-bg.white.center(style="border-radius: 4px; text-align: center") #{x.inpercent} %
+													div.progress.progress-striped
+														.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{x.inpercent}", aria-valuemin="0", aria-valuemax="100", style="width: #{x.inpercent}%")
+															span.sr-only #{x.inpercent} %
+														
+					- }
+
+				- if(data.categories.length !== 0) {
+				// The contestant wrapper
+				.alert.alert-danger
+					p 
+						strong PLEASE NOTE:  
+						| You can only <b>vote</b> for a single candidate in each of the categories listed below.
+
+				//loop through the categories data
+				for x in data.categories 
+					.col-xs-12.container(data-container="#{x.category}")
+						.page-header
+							h3 Category: #{x.category}
+
+						- var id = 0; //their IDs are as they are listed in the Array
+						- var border = ["panel-default", "panel-info", "panel-warning", "panel-success", "panel-danger", "panel-warning"];
+						for contestant in x.contestants
+							- id++ //1st ID == 1
+							div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant(data-contestantid="#{id + x.abbr}")
+								.panel.panel-warning
+									.panel-heading
+										h3(data-abbr="#{x.abbr}").grey.panel-title.smaller #{x.category}
+									.panel-body
+										div.media
+											div.pull-left
+												img.img.media-object.project-thumb(src="/images/gallery/3527082662734274.png", width="96px")
+											div.media-body.orange
+												h4.media-heading.orange #{contestant}
+												a.btn.btn-primary.btn-sm.vote-for-contestant(
+													data-contestantid="#{id + x.abbr}", 
+													data-category="#{x.category}",
+													data-abbr="#{x.abbr}", 
+													data-studentId="#{data.student.id}",
+													data-studentEmail="#{data.student.emailaddress}")
+													i.icon-ok 
+													| Vote
+													//- a.btn.btn-default.btn-sm(role="button", href="#") Cancel Vote
+				- }
+
+	// Vote controlling script											
+	script(type="text/javascript").
+		$('.vote-for-contestant').click(function(event) {
+			var el = $(this);
+			var data = el.data();
+			//- console.log($.param(data));
+			jQuery.get('/contestants/castvote', data).done(function(response) {
+				//Do something
+				if(response.status) {
+					el.removeClass('btn-primary').addClass('btn-success').text("Voted");
+					$('.contestant[data-contestantid="' + data.contestantid + '"]').siblings('.contestant').fadeOut(300, function() {
+						//Finds its panels and change its colors
+						$(this).find('.panel.panel-warning').removeClass('panel-warning').addClass('panel-success');
+						var clone = $(this).clone();
+					});
+						
+				}
+			}).fail(function(err) {
+				console.log("An error took place while casting your vote -- ", err);
+			})
+			return false;
+		});

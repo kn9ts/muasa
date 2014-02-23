@@ -34,7 +34,7 @@ module.exports = function(req, res, next) {
         "abbr": "BD"
     }]
 
-    if(!req.session.CONTESTANTS) req.session.CONTESTANTS = CONTESTANTS;
+    if (!req.session.CONTESTANTS) req.session.CONTESTANTS = CONTESTANTS;
     // console.info(req.session.CONTESTANTS[0]);
     next();
 };

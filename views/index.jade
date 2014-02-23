@@ -7,14 +7,21 @@ block content
 		div.col-xs-12
 			div.row
 				div.col-md-offset-3.col-xs-offset-1.col-md-6.col-xs-10
-					.well
-						ul.nav.nav-pills.nav-justified
+					.well.well-sm
+						ul.nav.nav-pills.na-justified
 							li.active: a(href="#sign-in", data-toggle="tab") Log in
 							li: a(href="#sign-up", data-toggle="tab") Register to vote
 
+						script(type="text/javascript").
+							$(window).load(function() {
+								setTimeout(function() {
+									$('.nav li:first-child a').click().click();
+								}, 2000)
+							});
+
 						div.tab-content
 							//Tab for signing in
-							div.tab-pane.active(id="sign-in")
+							div.tab-pane.active#sign-in
 								form(action="student/login", method="POST", role="form", style="padding: 5% 0").form-horizontal
 									.form-group
 										label.control-label.col-xs-12.col-sm-3.no-padding-right(for="emailaddress") 
@@ -34,7 +41,7 @@ block content
 											button.btn.btn-primary.btn-md Log In
 
 							//Tab for registering
-							div.tab-pane(id="sign-up")
+							div.tab-pane#sign-up
 								form(action="student/signup", method="POST", role="form", style="padding: 5% 0").form-horizontal
 									.form-group
 										label.control-label.col-xs-12.col-sm-3.no-padding-right(for="fullnames") 

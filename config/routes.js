@@ -39,13 +39,13 @@ module.exports.routes = {
     },
 
     '/contest': {
-      controller: 'VotedonController', 
-      action: 'loadContestants'
+        controller: 'ContestantsController',
+        action: 'load'
     },
 
     '/cookies': {
-      controller: 'StudentController', 
-      action: 'cookies'
+        controller: 'StudentController',
+        action: 'cookies'
     }
 
     /*
