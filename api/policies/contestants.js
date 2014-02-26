@@ -10,7 +10,7 @@
 module.exports = function(req, res, next) {
     var CONTESTANTS = [{
         "category": "Best Lecturer",
-        "contestants": ["Mbogo Lincon", "Jane Kariuki", "Bernard Arum", "Douglas Nyakundi", "Dr Ogola", "Dr Osoro", "Diana Opollo", "Gitonga Antony", "Judy Gakenia", "Dr wambua", "Mbogo", "Waweru njoroge", "Esther", "Kabiera", "Dr Owour", "Ann Kihanya", "Patrice Kioko", "Kinyua", "Paul Sang"],
+        "contestants": ["Mbogo Lincon", "Jane Kariuki", "Bernard Arum", "Douglas Nyakundi", "Dr. Kenenedy Ogola", "Dr. Kennedy Osoro", "Dr. Diana Opollo", "Gitonga Antony", "Judy Gakenia", "Dr wambua", "Lincoln Authur Mbogo", "Waweru Njoroge", "Esther", "Kabiera", "Dr Owour", "Ann Kihanya", "Patrice Kioko", "Kinyua", "Paul Sang"],
         "abbr": "BL"
     }, {
         "category": "Consistent Best Dresser",
@@ -22,7 +22,7 @@ module.exports = function(req, res, next) {
         "abbr": "MP"
     }, {
         "category": "MUA Staff",
-        "contestants": ["Rosemary", "Edwina", "Miriam", "Evans Oyugi", "Faiza", "Anthony Kangethe", "Esther Wanaina", "Judy Ngayu", "Dinah ", "Kevin Nderitu", "Lynette Mwende", "Steve Gachugu", "Diana Kibare", "Solomon", "Belinda"],
+        "contestants": ["Rosemary Ogubala Apiyo", "Edwina Kerubo", "Miriam Wanjiru", "Evans Oyugi", "Faiza Ahmed Abdalla", "Anthony Kangethe", "Esther Wanaina", "Judy Ngayu", "Dinah Kabura", "Kevin Nderitu", "Lynette Mwende", "Steve Gachugu", "Diana Kibare", "Solomon Kimani", "Belinda Nzula"],
         "abbr": "MUAS"
     }, {
         "category": "Sports Person",
@@ -30,7 +30,7 @@ module.exports = function(req, res, next) {
         "abbr": "SP"
     }, {
         "category": "Best Department",
-        "contestants": ["Library", "Dean of students", "Finance", "Admissionsi.", "ICT"],
+        "contestants": ["Library", "Dean of Students", "Finance", "Admissionsion", "ICT"],
         "abbr": "BD"
     }]
 

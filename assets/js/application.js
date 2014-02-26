@@ -77,11 +77,13 @@ $(function() {
 			gutterWidth: 20
 		});
 
+		$('#')
+
 		scrollSpyRefresh();
 		waypointsRefresh();
 	});
 
-	$('#')
+
 
 	/*============================================
 	Project Preview
