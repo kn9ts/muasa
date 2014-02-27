@@ -10,7 +10,7 @@
 module.exports = function(req, res, next) {
     var CONTESTANTS = [{
         "category": "Best Lecturer",
-        "contestants": ["Mbogo Lincon", "Jane Kariuki", "Bernard Arum", "Douglas Nyakundi", "Dr. Kenenedy Ogola", "Dr. Kennedy Osoro", "Dr. Diana Opollo", "Gitonga Antony", "Judy Gakenia", "Dr wambua", "Lincoln Authur Mbogo", "Waweru Njoroge", "Esther", "Kabiera", "Dr Owour", "Ann Kihanya", "Patrice Kioko", "Kinyua", "Paul Sang"],
+        "contestants": ["Mbogo Authur Lincon", "Jane Kariuki", "Bernard Arum", "Douglas Nyakundi", "Dr. Kenenedy Ogola", "Dr. Kennedy Osoro", "Dr. Diana Opollo", "Gitonga Antony", "Dr wambua", "Waweru Njoroge", "Esther", "Kabiera", "Dr Owour", "Ann Kihanya", "Patrice Kioko"],
         "abbr": "BL"
     }, {
         "category": "Consistent Best Dresser",
@@ -18,7 +18,7 @@ module.exports = function(req, res, next) {
         "abbr": "CBD"
     }, {
         "category": "Most Popular",
-        "contestants": ["Judy Kimani", "Alex Atingo", "John Mwangi", "Patrick Wandera", "David Ongola", "Bedel Silali", "Anita Onduko", "Simon Kiplagat", "Obengele Charles", "Regina Matiru", "David Ndunge", "John Mwangi", "Hazrat Ali", "Maina Karuiru", "Jakom", "Teresia Kamuga", "Martin Akuku", "David Ongola", "Asha Mwingi", "Helen Wekesa", "Nelson Jeremy", "Ezra Boniface makenzie", "Kadima James"],
+        "contestants": ["Alex Atingo", "John Mwangi", "Patrick Wandera", "Bedel Silali", "Anita Onduko", "Simon Kiplagat", "Obengele Charles", "Regina Matiru", "David Ndunge", "John Mwangi", "Hazrat Ali", "Maina Karuiru", "Jakom", "Teresia Kamuga", "Martin Akuku", "David Ongola", "Asha Mwingi", "Helen Wekesa", "Nelson Jeremy", "Ezra Boniface makenzie", "Kadima James"],
         "abbr": "MP"
     }, {
         "category": "MUA Staff",
@@ -30,7 +30,7 @@ module.exports = function(req, res, next) {
         "abbr": "SP"
     }, {
         "category": "Best Department",
-        "contestants": ["Library", "Dean of Students", "Finance", "Admissionsion", "ICT"],
+        "contestants": ["Library", "Car Wash", "Finance", "Admissionsion", "ICT"],
         "abbr": "BD"
     }]
 
