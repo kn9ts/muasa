@@ -34,9 +34,12 @@ module.exports = {
      */
     signup: function(req, res, next) {
         Student.create(req.params.all(), function createStudent(err, student) {
-            if (err) return next(err);
+            if (err) res.json(err);
             //Student has been created, redirect back so as they can login
-            res.redirect('/');
+            else {
+                req.session.SIGNEDUP = true;
+                res.redirect('/');
+            }
             // res.json(req.params.all());
         });
     },

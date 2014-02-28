@@ -13,7 +13,7 @@ var Student = {
         fullnames: {
             type: 'string',
             required: true,
-            regex: /^[\w]+(\s)[\w]+$/
+            regex: /^[\w]+(\s)[\w]+(\s)?[\w]+?$/
         },
 
         idno: {
