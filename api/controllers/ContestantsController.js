@@ -79,8 +79,8 @@ var ContestantsController = {
 
                                 //extract the name of the contestant
                                 var name = cat.contestants[cid - 1];
-                                var ximage = _.findWhere(IMAGES, {name: name})
-                                var image = ximage ? ximage: '/images/gallery/10.jpg';
+                                var xi = _.findWhere(IMAGES, {name: name})
+                                var image = xi ? xi.image: '/images/gallery/10.jpg';
 
                                 //percentage of the total votes the contestant as recieved from the total;
                                 var pc = Math.floor((votes/results.length) * 100);
@@ -99,8 +99,8 @@ var ContestantsController = {
                                 // }
 
                                 a.contestants = _.map(a.contestants, function(b, i) {
-                                    var s = _.findWhere(IMAGES, {name: b}); //return null if nothing is found
-                                    image = s ? s.image: '/images/gallery/10.jpg';
+                                    var xi = _.findWhere(IMAGES, {name: b}); //return null if nothing is found
+                                    image = xi ? xi.image: '/images/gallery/10.jpg';
                                     return {name: b, image: image};
                                 });
 
@@ -111,7 +111,7 @@ var ContestantsController = {
                             // setTimeout(function() {
                             res.render('contest', {
                                 data: {
-                                    images: IMAGES,
+                                    // images: IMAGES,
                                     categories: filteredcategories,
                                     category_votes: castedvotespercat,
                                     results: vfarray,
