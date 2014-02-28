@@ -82,11 +82,13 @@ var ContestantsController = {
                                 var xi = _.findWhere(IMAGES, {name: name})
                                 var image = xi ? xi.image: '/images/gallery/10.jpg';
 
+                                var votecountpercat = castedvotespercat[cn.abbr];
+
                                 //percentage of the total votes the contestant as recieved from the total;
-                                var pc = Math.floor((votes/results.length) * 100);
+                                var pc = Math.floor((votes/votecountpercat) * 100);
 
                                 //merge returned data
-                                return _.extend(cn, {name: name, votes: votes, votecount: castedvotespercat[cn.abbr], inpercent: pc, image: image});
+                                return _.extend(cn, {name: name, votes: votes, votecount: votecountpercat, inpercent: pc, image: image});
                             });
 
 

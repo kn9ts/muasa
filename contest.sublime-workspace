@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"contes",
+				"contest"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"conte",
+				"contestants"
+			],
+			[
+				"contest",
+				"contest"
+			],
+			[
 				"Contest",
 				"Contest"
 			],
@@ -64,10 +80,6 @@
 				"border-radius"
 			],
 			[
-				"cate",
-				"categories"
-			],
-			[
 				"con",
 				"contestant"
 			],
@@ -104,10 +116,6 @@
 				"ContestantsController"
 			],
 			[
-				"contes",
-				"contestantid"
-			],
-			[
 				"voted",
 				"votedfor"
 			],
@@ -122,10 +130,6 @@
 			[
 				"c",
 				"contestant"
-			],
-			[
-				"conte",
-				"contestantid"
 			],
 			[
 				"D",
@@ -230,10 +234,6 @@
 			[
 				"ea",
 				"emailaddress"
-			],
-			[
-				"contest",
-				"contestant"
 			],
 			[
 				"studen",
@@ -547,7 +547,7 @@
 			"file": "api/controllers/ContestantsController.js",
 			"settings":
 			{
-				"buffer_size": 12305,
+				"buffer_size": 12410,
 				"line_ending": "Unix"
 			}
 		},
@@ -604,6 +604,14 @@
 			"settings":
 			{
 				"buffer_size": 3456,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/application.js",
+			"settings":
+			{
+				"buffer_size": 5491,
 				"line_ending": "Unix"
 			}
 		}
@@ -820,6 +828,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"json",
+			"render",
 			"business",
 			"site_name",
 			"Contest",
@@ -945,9 +955,7 @@
 			"cats",
 			"inArray",
 			"session",
-			"signedCookies",
-			"uc",
-			"warning"
+			"signedCookies"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1369,15 +1377,15 @@
 					"file": "api/controllers/ContestantsController.js",
 					"settings":
 					{
-						"buffer_size": 12305,
+						"buffer_size": 12410,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5769,
-								5769
+								5874,
+								5874
 							]
 						],
 						"settings":
@@ -1491,7 +1499,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1440.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2307,6 +2315,33 @@
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "assets/js/application.js",
+					"settings":
+					{
+						"buffer_size": 5491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,

@@ -71,6 +71,24 @@ module.exports = function(req, res, next) {
     }, {
         name: "Eunice Nyabonyi",
         image: "/images/gallery/13.jpg"
+    }, {
+        name: "Kevin Nderitu",
+        image: "/images/gallery/17.jpg"
+    }, {
+        name: "Arun Sarvaiya",
+        image: "/images/gallery/14.jpg"
+    }, {
+        name: "Hazrat Ali",
+        image: "/images/gallery/15.jpg"
+    }, {
+        name: "Faiza Ahmed",
+        image: "/images/gallery/16.jpg"
+    }, {
+        name: "Carol Wangunyu",
+        image: "/images/gallery/19.jpg"
+    }, {
+        name: "Omar Bashabra",
+        image: "/images/gallery/20.jpg"
     }]
 
     if (!req.session.CONTESTANTS) req.session.CONTESTANTS = CONTESTANTS;
