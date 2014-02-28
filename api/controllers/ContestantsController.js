@@ -98,13 +98,13 @@ var ContestantsController = {
                                 //     "abbr": "BL"
                                 // }
 
-                                var cn = _.map(a.contestants, function(b, i) {
+                                var cnst = _.map(a.contestants, function(b, i) {
                                     var xi = _.findWhere(IMAGES, {name: b}); //return null if nothing is found
                                     image = xi ? xi.image: '/images/gallery/10.jpg';
                                     return {name: b, image: image};
                                 });
-
-                                return cn;
+                                // a.contestants = cnst;
+                                return {category: a.category, contestants: cnst, abbr: a.abbr};
                             })
 
                             //finally render the results
