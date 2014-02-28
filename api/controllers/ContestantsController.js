@@ -99,8 +99,8 @@ var ContestantsController = {
                                 // }
 
                                 a.contestants = _.map(a.contestants, function(b, i) {
-                                    var image = _.findWhere(IMAGES, {name: b}); //return null if nothing is found
-                                    image = image ? image: '/images/gallery/10.jpg';
+                                    var s = _.findWhere(IMAGES, {name: b}); //return null if nothing is found
+                                    image = s ? s.image: '/images/gallery/10.jpg';
                                     return {name: b, image: image};
                                 });
 
