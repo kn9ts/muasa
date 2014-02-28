@@ -23,7 +23,7 @@ var _ = require('underscore'),
 var promise = require('promised-io/promise');
 Deferred = promise.Deferred; //will handle asychronous file flows
 
-ContestantsController = {
+var ContestantsController = {
 
     load: function(req, res) {
         if (req.signedCookies.muasaStudent) {
@@ -31,6 +31,7 @@ ContestantsController = {
                 var fn = ContestantsController;
                 var student = req.signedCookies.muasaStudent;
                 var CONTESTANTS = req.session.CONTESTANTS || false;
+                var IMAGES = req.session.IMAGES || false;
                 var D = new Deferred();
 
                 //Get if he has voted in any categories
@@ -78,18 +79,39 @@ ContestantsController = {
 
                                 //extract the name of the contestant
                                 var name = cat.contestants[cid - 1];
+                                var ximage = _.findWhere(IMAGES, {name: name})
+                                var image = ximage ? ximage: '/images/gallery/10.jpg';
 
                                 //percentage of the total votes the contestant as recieved from the total;
                                 var pc = Math.floor((votes/results.length) * 100);
 
                                 //merge returned data
-                                return _.extend(cn, {name: name}, {votes: votes}, {votecount: castedvotespercat[cn.abbr]}, {inpercent: pc});
+                                return _.extend(cn, {name: name, votes: votes, votecount: castedvotespercat[cn.abbr], inpercent: pc, image: image});
                             });
+
+
+                            //add images to the category set
+                            filteredcategories = _.map(filteredcategories, function(a, i) {
+                                // {
+                                //     "category": "Best Lecturer",
+                                //     "contestants": ["Mbogo Authur Lincon", "Jane Kariuki", "Bernard Arum", "Douglas Nyakundi", "Dr. Kenenedy Ogola", "Dr. Kennedy Osoro", "Dr. Diana Opollo", "Gitonga Antony", "Dr wambua", "Waweru Njoroge", "Esther", "Kabiera", "Dr Owour", "Ann Kihanya", "Patrice Kioko"],
+                                //     "abbr": "BL"
+                                // }
+
+                                a.contestants = _.map(a.contestants, function(b, i) {
+                                    var image = _.findWhere(IMAGES, {name: b}); //return null if nothing is found
+                                    image = image ? image: '/images/gallery/10.jpg';
+                                    return {name: b, image: image};
+                                });
+
+                                return a;
+                            })
 
                             //finally render the results
                             // setTimeout(function() {
                             res.render('contest', {
                                 data: {
+                                    images: IMAGES,
                                     categories: filteredcategories,
                                     category_votes: castedvotespercat,
                                     results: vfarray,

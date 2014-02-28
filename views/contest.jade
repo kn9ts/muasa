@@ -33,39 +33,32 @@ block content
 					p.section-description.lead Non-votable categories
 
 				div.row
-					div.col-sm-6.col-sm-12
+					div.col-sm-4.col-sm-12
 						div.row
 							div.col-sm-3.col-xs-12
 								img(src="/images/gallery/3527082662734274.png").img-responsive.img-thumbnail
 
 							div.col-sm-9.col-xs-12
-								h2 Student of the year
+								h2 Dean Award
 								blockquote
-									| Outgoing. Always Punctual.
-									br 
-									| A member of the student committee
-									br 
-									| Great academic performance
-									br
-									| Uses Case studies. Completes the syllabus.
-									br
-									| Participate and helps others.
 
-					div.col-md-6.col-sm-12
+					div.col-md-4.col-sm-12
 						div.row
 							div.col-sm-3.col-xs-12
 								img(src="/images/gallery/3527082662734274.png").img-responsive.img-thumbnail
 
 							div.col-sm-9.col-xs-12
-								h2 Sports Person
+								h2 Suprise Award
 								blockquote
-									| Athletic
-									br 
-									| Active in all recent sport events
-									br 
-									| Engages student
-									br
-									| A member of any of MUA sports teams/clubs
+
+					div.col-md-4.col-sm-12
+						div.row
+							div.col-sm-3.col-xs-12
+								img(src="/images/gallery/3527082662734274.png").img-responsive.img-thumbnail
+
+							div.col-sm-9.col-xs-12
+								h2 Academic Award
+								blockquote
 
 
 		div.bg-light
@@ -108,6 +101,7 @@ block content
 								h3 Current results of your prefered candidates
 							//loop through the candidate chosen
 							for x in data.votedfor
+								//- - var image = #{x.name}
 								div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.pull-left(data-contestantid="#{id + x.abbr}")
 									.panel.panel-warning
 										.panel-heading
@@ -115,7 +109,7 @@ block content
 										.panel-body
 											div.media
 												div.pull-left
-													img.img.media-object.project-thumb(src="/images/gallery/3527082662734274.png", width="96px")
+													img.img.media-object.project-thumb(src="#{x.image}", width="96px")
 												div.media-body.orange
 													h4.media-heading.orange #{x.name}
 													h2.green-bg.white.center(style="border-radius: 4px; text-align: center") #{x.inpercent} %
@@ -149,9 +143,9 @@ block content
 									.panel-body
 										div.media
 											div.pull-left
-												img.img.media-object.project-thumb(src="/images/gallery/3527082662734274.png", width="96px")
+												img.img.media-object.project-thumb(src="#{contestant.image}", width="96px")
 											div.media-body.orange
-												h4.media-heading.orange #{contestant}
+												h4.media-heading.orange #{contestant.name}
 												a.btn.btn-primary.btn-sm.vote-for-contestant(
 													data-contestantid="#{id + x.abbr}", 
 													data-category="#{x.category}",

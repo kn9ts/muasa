@@ -13,12 +13,16 @@ module.exports = function(req, res, next) {
         "contestants": ["Mbogo Authur Lincon", "Jane Kariuki", "Bernard Arum", "Douglas Nyakundi", "Dr. Kenenedy Ogola", "Dr. Kennedy Osoro", "Dr. Diana Opollo", "Gitonga Antony", "Dr wambua", "Waweru Njoroge", "Esther", "Kabiera", "Dr Owour", "Ann Kihanya", "Patrice Kioko"],
         "abbr": "BL"
     }, {
+        "category": "Student of the Year",
+        "contestants": ["Njeri Gatonye", "David Ongalo", "Meshack Mwakisagho", "Jeremiah Kapuwa", "Francis Kibuwe", "Charles Obengele", "Felista Mwangangi", "Ali Azrat", "Raphael Amuko", "Eric Mwangi", "Mnjala John", "Duncun Barkebo", "Eluid Muchai", "Keziah Munyao"],
+        "abbr": "SOTY"
+    }, {
         "category": "Consistent Best Dresser",
-        "contestants": ["Abdi Mohammed", "Eva Mwende", "Vincent Celanga", "Christine Kiarie", "Alex Atingo", "Esther Kamanja", "Evans Ondera", "Christine Jeramani", "Kipruto Kirwa", "Simon Ngure", "Michael Kajwang", "Irene Kamau", "Emma Pendo", "Jean Sitati", "Moses Nkapinini", "Fiona Adongo", "Arun Sarvaiya", "Zara Farah", "Mable Kibore", "Njeri Thiga", "Helen Gathi", "Karen Daudi", "Carol Wangunyu", "John Mwangi", "Margret Otieno"],
+        "contestants": ["Abdi Mohammed", "Eva Mwende", "Vincent Celanga", "Christine Kiarie", "Alex Atingo", "Esther Kamanja", "Evans Ondera", "Christine Jeramani", "Kipruto Kirwa", "Simon Ngure", "Michael Kajwang", "Irene Kamau", "Emma Pendo", "Jean Sitati", "Moses Nkipilil", "Fiona Adongo", "Arun Sarvaiya", "Zara Farah", "Mable Kibore", "Njeri Thiga", "Helen Gathi", "Karen Daudi", "Carol Wangunyu", "John Mwangi", "Margret Otieno"],
         "abbr": "CBD"
     }, {
         "category": "Most Popular",
-        "contestants": ["Alex Atingo", "John Mwangi", "Patrick Wandera", "Bedel Silali", "Anita Onduko", "Simon Kiplagat", "Obengele Charles", "Regina Matiru", "David Ndunge", "John Mwangi", "Hazrat Ali", "Maina Karuiru", "Jakom", "Teresia Kamuga", "Martin Akuku", "David Ongola", "Asha Mwingi", "Helen Wekesa", "Nelson Jeremy", "Ezra Boniface makenzie", "Kadima James"],
+        "contestants": ["Alex Atingo", "Keziah Munyao", "John Mwangi", "Patrick Wandera", "Bedel Silali", "Anita Onduko", "Simon Kiplagat", "Obengele Charles", "Regina Matiru", "David Ndunge", "John Mwangi", "Hazrat Ali", "Maina Karuiru", "Jakom", "Teresia Kamuga", "Martin Akuku", "David Ongola", "Asha Mwingi", "Helen Wekesa", "Nelson Jeremy", "Ezra Boniface makenzie", "Kadima James"],
         "abbr": "MP"
     }, {
         "category": "MUA Staff",
@@ -26,7 +30,7 @@ module.exports = function(req, res, next) {
         "abbr": "MUAS"
     }, {
         "category": "Sports Person",
-        "contestants": ["Norah Mwanamake", "James Gitonga", "Obengele", "Stanley Mwangi", "Omar ", "Eunice", "Keziah Munyao", "Jeremy Nelson", "Salad Ahmed"],
+        "contestants": ["Norah Mwanamake", "James Gitonga", "Charles Obengele", "Stanley Mwangi", "Omar Bashabra", "Eunice Nyabonyi", "Jeremy Nelson", "Salad Ahmed"],
         "abbr": "SP"
     }, {
         "category": "Best Department",
@@ -34,7 +38,43 @@ module.exports = function(req, res, next) {
         "abbr": "BD"
     }]
 
+    var IMAGES = [{
+        name: "Dr Owour",
+        image: '/images/gallery/1.jpg'
+    }, {
+        name: "Solomon Kimani",
+        image: "/images/gallery/2.jpg"
+    }, {
+        name: "Steve Gachugu",
+        image: "/images/gallery/3.jpg"
+    }, {
+        name: "Miriam Wanjiru",
+        image: "/images/gallery/4.jpg"
+    }, {
+        name: "Edwina Kerubo",
+        image: "/images/gallery/5.jpg"
+    }, {
+        name: "Antony Kangethe",
+        image: "/images/gallery/6.jpg"
+    }, {
+        name: "Evans Oyugi",
+        image: "/images/gallery/7.jpg"
+    }, {
+        name: "Esther Wanaina",
+        image: "/images/gallery/11.jpg"
+    }, {
+        name: "Regina Matiru",
+        image: "/images/gallery/8.jpg"
+    }, {
+        name: "Moses Nkapilil",
+        image: "/images/gallery/12.jpg"
+    }, {
+        name: "Eunice Nyabonyi",
+        image: "/images/gallery/13.jpg"
+    }]
+
     if (!req.session.CONTESTANTS) req.session.CONTESTANTS = CONTESTANTS;
+    if (!req.session.IMAGES) req.session.IMAGES = IMAGES;
     // console.info(req.session.CONTESTANTS[0]);
     next();
 };
