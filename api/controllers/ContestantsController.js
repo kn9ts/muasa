@@ -98,18 +98,18 @@ var ContestantsController = {
                                 //     "abbr": "BL"
                                 // }
 
-                                a.contestants = _.map(a.contestants, function(b, i) {
+                                var cn = _.map(a.contestants, function(b, i) {
                                     var xi = _.findWhere(IMAGES, {name: b}); //return null if nothing is found
                                     image = xi ? xi.image: '/images/gallery/10.jpg';
                                     return {name: b, image: image};
                                 });
 
-                                return a;
+                                return cn;
                             })
 
                             //finally render the results
                             // setTimeout(function() {
-                            res.render('contest', {
+                            res.json({
                                 data: {
                                     // images: IMAGES,
                                     categories: filteredcategories,

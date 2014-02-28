@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Contest",
+				"Contest"
+			],
+			[
 				"image",
 				"images"
 			],
@@ -170,10 +174,6 @@
 			[
 				"destr",
 				"destroy"
-			],
-			[
-				"Contest",
-				"Contestants"
 			],
 			[
 				"stat",
@@ -672,6 +672,7 @@
 	},
 	"file_history":
 	[
+		"/Volumes/My Stuff/Websites/lab/voting/views/includes/header.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/views/includes/footer.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/Gruntfile.js",
 		"/Volumes/My Stuff/Websites/lab/voting/views/index.jade",
@@ -695,7 +696,6 @@
 		"/Volumes/My Stuff/Websites/lab/voting/config/policies.js",
 		"/Volumes/My Stuff/Websites/lab/voting/config/session.js",
 		"/Volumes/My Stuff/Websites/lab/voting/config/sockets.js",
-		"/Volumes/My Stuff/Websites/lab/voting/views/includes/header.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/views/includes/scripts.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/assets/css/bootstrap.min-yeti.css",
 		"/Volumes/My Stuff/Websites/lab/voting/assets/css/docs.min.css",
@@ -820,6 +820,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"business",
+			"site_name",
+			"Contest",
+			"logo",
+			"image",
+			"content",
+			"image",
 			"log",
 			"next",
 			"json",
@@ -940,14 +947,7 @@
 			"session",
 			"signedCookies",
 			"uc",
-			"warning",
-			"children",
-			"siblings",
-			"results",
-			"done",
-			"category",
-			"Votedon",
-			"json"
+			"warning"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -981,8 +981,8 @@
 						"selection":
 						[
 							[
-								2407,
-								2407
+								473,
+								455
 							]
 						],
 						"settings":
@@ -1094,8 +1094,8 @@
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 12.0,
-						"translation.y": 1148.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
