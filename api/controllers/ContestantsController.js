@@ -109,7 +109,7 @@ var ContestantsController = {
 
                             //finally render the results
                             // setTimeout(function() {
-                            res.json({
+                            res.render('contest', {
                                 data: {
                                     // images: IMAGES,
                                     categories: filteredcategories,
