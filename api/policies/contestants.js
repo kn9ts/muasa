@@ -30,7 +30,7 @@ module.exports = function(req, res, next) {
         "abbr": "MUAS"
     }, {
         "category": "Sports Person",
-        "contestants": ["Norah Mwanamake", "James Gitonga", "Charles Obengele", "Stanley Mwangi", "Omar Bashabra", "Eunice Nyabonyi", "Jeremy Nelson", "Salad Ahmed"],
+        "contestants": ["Norah Mwanake", "James Gitonga", "Charles Obengele", "Stanley Mwangi", "Omar Bashabra", "Eunice Nyabonyi", "Jeremy Nelson", "Salad Ahmed"],
         "abbr": "SP"
     }, {
         "category": "Best Department",
@@ -89,6 +89,18 @@ module.exports = function(req, res, next) {
     }, {
         name: "Omar Bashabra",
         image: "/images/gallery/20.jpg"
+    }, {
+        name: "Keziah Munyao",
+        image: "/images/gallery/21.jpg"
+    }, {
+        name: "Nelson Jeremy",
+        image: "/images/gallery/22.jpg"
+    }, {
+        name: "Norah Mwanake",
+        image: "/images/gallery/23.jpg"
+    }, {
+        name: "Alex Atingo",
+        image: "/images/gallery/24.jpg"
     }]
 
     if (!req.session.CONTESTANTS) req.session.CONTESTANTS = CONTESTANTS;

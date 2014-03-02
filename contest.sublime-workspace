@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Car",
+				"Carol"
+			],
+			[
+				"vote",
+				"votecountpercat"
+			],
+			[
 				"contes",
 				"contest"
 			],
@@ -506,14 +514,6 @@
 			[
 				"rec",
 				"recorded"
-			],
-			[
-				"crea",
-				"createObjectURL"
-			],
-			[
-				"setTime",
-				"setTimeout	jsWindow"
 			]
 		]
 	},
@@ -547,7 +547,7 @@
 			"file": "api/controllers/ContestantsController.js",
 			"settings":
 			{
-				"buffer_size": 12410,
+				"buffer_size": 12483,
 				"line_ending": "Unix"
 			}
 		},
@@ -579,7 +579,7 @@
 			"file": "api/policies/Contestants.js",
 			"settings":
 			{
-				"buffer_size": 3760,
+				"buffer_size": 4236,
 				"line_ending": "Unix"
 			}
 		},
@@ -680,6 +680,7 @@
 	},
 	"file_history":
 	[
+		"/Volumes/My Stuff/Websites/lab/voting/assets/css/application.css",
 		"/Volumes/My Stuff/Websites/lab/voting/views/includes/header.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/views/includes/footer.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/Gruntfile.js",
@@ -690,7 +691,6 @@
 		"/Volumes/My Stuff/Websites/lab/voting/api/policies/Contestants.js",
 		"/Volumes/My Stuff/Websites/lab/voting/assets/js/application.js",
 		"/Volumes/My Stuff/Websites/lab/voting/Procfile",
-		"/Volumes/My Stuff/Websites/lab/voting/assets/css/application.css",
 		"/Volumes/My Stuff/Websites/lab/voting/config/adapters.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/models/Votedon.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/models/Student.js",
@@ -828,6 +828,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Wangunyu",
+			"Carol",
+			"Sarvaiya",
+			"Arun",
+			"Faiza Ahmed",
+			"Sarvaiya",
+			"Faiza",
+			"Arun",
+			"Sarvaiya",
+			"Arun",
+			"Nderitu",
+			"Nyabonyi",
+			"Everlyne",
+			"Everl",
+			"Everlyne",
+			"Evelyne",
+			"Eunice",
+			"castedvotespercat",
 			"json",
 			"render",
 			"business",
@@ -937,25 +955,7 @@
 			"arrayCount",
 			"votes",
 			"uc",
-			"total",
-			"filter",
-			"findWhere",
-			"votes",
-			"category",
-			"cat",
-			"abbr",
-			"cats",
-			"abbr",
-			"response",
-			"results",
-			"resp",
-			"cats",
-			"expires",
-			"cat",
-			"cats",
-			"inArray",
-			"session",
-			"signedCookies"
+			"total"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -989,8 +989,8 @@
 						"selection":
 						[
 							[
-								473,
-								455
+								898,
+								898
 							]
 						],
 						"settings":
@@ -1377,15 +1377,15 @@
 					"file": "api/controllers/ContestantsController.js",
 					"settings":
 					{
-						"buffer_size": 12410,
+						"buffer_size": 12483,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5874,
-								5874
+								4497,
+								4497
 							]
 						],
 						"settings":
@@ -1498,8 +1498,8 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 1440.0,
+						"translation.x": 195.0,
+						"translation.y": 1108.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1905,15 +1905,15 @@
 					"file": "api/policies/Contestants.js",
 					"settings":
 					{
-						"buffer_size": 3760,
+						"buffer_size": 4236,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1560,
-								1560
+								4028,
+								4028
 							]
 						],
 						"settings":
@@ -2027,7 +2027,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 732.0,
+						"translation.y": 1022.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
