@@ -18,7 +18,7 @@ module.exports = function(req, res, next) {
         "abbr": "SOTY"
     }, {
         "category": "Consistent Best Dresser",
-        "contestants": ["Abdi Mohammed", "Eva Mwende", "Vincent Celanga", "Christine Kiarie", "Alex Atingo", "Esther Kamanja", "Evans Ondera", "Christine Jeramani", "Kipruto Kirwa", "Simon Ngure", "Michael Kajwang", "Irene Kamau", "Emma Pendo", "Jean Sitati", "Moses Nkipilil", "Fiona Adongo", "Arun Sarvaiya", "Zara Farah", "Mable Kibore", "Njeri Thiga", "Helen Gathi", "Karen Daudi", "Carol Wangunyu", "John Mwangi", "Margret Otieno"],
+        "contestants": ["Abdi Mohammed", "Eva Mwende", "Vincent Celanga", "Christine Kiarie", "Alex Atingo", "Esther Kamanja", "Evans Ondera", "Christine Jeramani", "Kipruto Kirwa", "Simon Ngure", "Michael Kajwang", "Irene Kamau", "Emma Pendo", "Jean Sitati", "Moses Nkipilil", "Fiona Adongo", "Arun Sarvaiya", "Zara Farah", "Mable Kibore", "Njeri Thiga", "Helen Gathi", "Daudi Hajji", "Carol Wangunyu", "John Mwangi", "Margret Otieno"],
         "abbr": "CBD"
     }, {
         "category": "Most Popular",
@@ -101,6 +101,18 @@ module.exports = function(req, res, next) {
     }, {
         name: "Alex Atingo",
         image: "/images/gallery/24.jpg"
+    }, {
+        name: "Everlyne Mwende",
+        image: "/images/gallery/18.jpg"
+    }, {
+        name: "Jean Sitati",
+        image: "/images/gallery/3-2.jpg"
+    }, {
+        name: "Daudi Hajji",
+        image: "/images/gallery/2-2.jpg"
+    }, {
+        name: "Rosemary Ogubala Apiyo",
+        image: "/images/gallery/1-2.jpg"
     }]
 
     if (!req.session.CONTESTANTS) req.session.CONTESTANTS = CONTESTANTS;

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Mwa",
+				"Mwanamake"
+			],
+			[
+				"Mua",
+				"Munyao"
+			],
+			[
 				"Car",
 				"Carol"
 			],
@@ -506,14 +514,6 @@
 			[
 				"ad",
 				"addEventListener"
-			],
-			[
-				"blob",
-				"blobURL"
-			],
-			[
-				"rec",
-				"recorded"
 			]
 		]
 	},
@@ -579,7 +579,7 @@
 			"file": "api/policies/Contestants.js",
 			"settings":
 			{
-				"buffer_size": 4236,
+				"buffer_size": 4552,
 				"line_ending": "Unix"
 			}
 		},
@@ -828,6 +828,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"No",
+			"Mwanake",
+			"{\n",
+			"Mwanamake",
+			"Bashabra",
 			"Wangunyu",
 			"Carol",
 			"Sarvaiya",
@@ -950,12 +955,7 @@
 			"CONTESTANTS",
 			"reqmuasaStudent",
 			"..",
-			"signedCookies",
-			"CONTESTANTS",
-			"arrayCount",
-			"votes",
-			"uc",
-			"total"
+			"signedCookies"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -974,7 +974,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -1499,7 +1499,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 195.0,
-						"translation.y": 1108.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1905,15 +1905,15 @@
 					"file": "api/policies/Contestants.js",
 					"settings":
 					{
-						"buffer_size": 4236,
+						"buffer_size": 4552,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4028,
-								4028
+								4264,
+								4264
 							]
 						],
 						"settings":
@@ -2027,7 +2027,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1022.0,
+						"translation.y": 1242.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
