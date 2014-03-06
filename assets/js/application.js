@@ -64,18 +64,18 @@ $(function() {
 
     // ------ CONTESTANTS PREVIEW ---------
     $(window).load(function() {
-        $('#ccc-container').css({
-            visibility: 'visible'
-        });
+        // $('#ccc-container').css({
+        //     visibility: 'visible'
+        // });
 
-        $('#ccc-container').masonry({
-            itemSelector: '.ccc',
-            columnWidth: 200,
-            isFitWidth: true,
-            isResizable: true,
-            isAnimated: !Modernizr.csstransitions,
-            gutterWidth: 20
-        });
+        // $('#ccc-container').masonry({
+        //     itemSelector: '.ccc',
+        //     columnWidth: 200,
+        //     isFitWidth: true,
+        //     isResizable: true,
+        //     isAnimated: !Modernizr.csstransitions,
+        //     gutterWidth: 20
+        // });
 
         scrollSpyRefresh();
         waypointsRefresh();
