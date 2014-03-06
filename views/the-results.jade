@@ -75,12 +75,12 @@ block content
 					- if(data.length !== 0) {
 					//The ones the user has voted for, results
 					.col-xs-12(data-results="true")
-						.row
+						.row#cat-container
 							.page-header
 								h3 Current results of your prefered candidates
 							//loop through the candidate chosen
 							for x in data
-								.col-xs-12.container#cat-container(data-container="#{x.category}")
+								.col-xs-12.container(data-container="#{x.category}")
 									.page-header
 										h3 Category: #{x.category}
 
