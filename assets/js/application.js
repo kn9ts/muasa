@@ -68,8 +68,13 @@ $(function() {
 			visibility: 'visible'
 		});
 
+<<<<<<< HEAD
 		$('#ccc-container').masonry({
 			itemSelector: '.ccc',
+=======
+		$('#projects-container, .container').masonry({
+			itemSelector: '.project-item:not(.filtered)',
+>>>>>>> df96646b2b8a22d7d52562ad171538a8a37c4b95
 			columnWidth: 200,
 			isFitWidth: true,
 			isResizable: true,
