@@ -64,12 +64,12 @@ $(function() {
 
 	// ------ CONTESTANTS PREVIEW ---------
 	$(window).load(function() {
-		$('#projects-container').css({
+		$('#ccc-container').css({
 			visibility: 'visible'
 		});
 
-		$('#projects-container, .container').masonry({
-			itemSelector: '.project-item:not(.filtered)',
+		$('#ccc-container').masonry({
+			itemSelector: '.ccc',
 			columnWidth: 200,
 			isFitWidth: true,
 			isResizable: true,
