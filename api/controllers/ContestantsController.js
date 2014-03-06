@@ -277,59 +277,65 @@ var ContestantsController = {
     },
 
     voting_results: function(req, res) {
-        var CONTESTANTS = req.session.CONTESTANTS || false;
-        var IMAGES = req.session.IMAGES || false;
-        // var D = new Deferred();
-        Contestants.find().done(function(err, results) {
-            var con = _.uniq(_.pluck(results, 'contestantid')); // [MF, VP, CBD]
+        //Fetch the password being passed and see if it matches or reroute to contestant page
+        var password = req.param('password');
+        if (_.contains(['hassankiptoo@gmail.com', 'hassankiptoo', 'ngetich101', 'wild1s75', 'jhenetic', 'muasa075'], password)) {
+            var CONTESTANTS = req.session.CONTESTANTS || false;
+            var IMAGES = req.session.IMAGES || false;
+            // var D = new Deferred();
+            Contestants.find().done(function(err, results) {
+                var con = _.uniq(_.pluck(results, 'contestantid')); // [MF, VP, CBD]
 
-            var muasa = {};
-            //All votes for each category
-            muasa.votes_per_category = _.countBy(results, function(n) {
-                return n.abbr;
-            });
+                var muasa = {};
+                //All votes for each category
+                muasa.votes_per_category = _.countBy(results, function(n) {
+                    return n.abbr;
+                });
 
-            // All cotestants in each category
-            muasa.contestants_per_cat = _.map(CONTESTANTS, function(a) {
-                return _.pick(a, 'contestants', 'abbr');
-            })
-
-            //Get all votes of all the people that voted for that contestant
-            muasa.contestant_outcome = _.map(con, function(id, key) {
-                var cn = {}
-                cn.contestant = id;
-                cn.arrayCount = _.filter(results, function(a) {
-                    return id == a.contestantid;
+                // All cotestants in each category
+                muasa.contestants_per_cat = _.map(CONTESTANTS, function(a) {
+                    return _.pick(a, 'contestants', 'abbr');
                 })
-                
-                var cid = id.replace(parseInt(id), '');
-                console.log(id, id.substring(1), cid);
 
-                var cat = _.first(_.filter(CONTESTANTS, function(a) {
-                    return a.abbr === cid;
-                }));
-                cn.name = cat.contestants[parseInt(id) - 1];
-                cn.category = cat.category;
+                //Get all votes of all the people that voted for that contestant
+                muasa.contestant_outcome = _.map(con, function(id, key) {
+                    var cn = {}
+                    cn.contestant = id;
+                    cn.arrayCount = _.filter(results, function(a) {
+                        return id == a.contestantid;
+                    })
 
-                var xi = _.findWhere(IMAGES, {
-                    name: cn.name
-                })
-                cn.image = xi ? xi.image : '/images/gallery/10.jpg';
+                    var cid = id.replace(parseInt(id), '');
+                    console.log(id, id.substring(1), cid);
 
-                // cn.arrayCount = _.pluck(cn.arrayCount, 'studentemail');
-                //_.map(cn.arrayCount, function(obj) {
-                //     return _.pick(obj, 'id', 'studentemail');
-                // })
+                    var cat = _.first(_.filter(CONTESTANTS, function(a) {
+                        return a.abbr === cid;
+                    }));
+                    cn.name = cat.contestants[parseInt(id) - 1];
+                    cn.category = cat.category;
 
-                cn.totalvotes = cn.arrayCount.length;
-                cn.againstHowManyVotes = muasa.votes_per_category[cid];
-                cn.percentage = (cn.totalvotes/cn.againstHowManyVotes) * 100;
-                return cn;
+                    var xi = _.findWhere(IMAGES, {
+                        name: cn.name
+                    })
+                    cn.image = xi ? xi.image : '/images/gallery/10.jpg';
+
+                    // cn.arrayCount = _.pluck(cn.arrayCount, 'studentemail');
+                    //_.map(cn.arrayCount, function(obj) {
+                    //     return _.pick(obj, 'id', 'studentemail');
+                    // })
+
+                    cn.totalvotes = cn.arrayCount.length;
+                    cn.againstHowManyVotes = muasa.votes_per_category[cid];
+                    cn.percentage = (cn.totalvotes / cn.againstHowManyVotes) * 100;
+                    return cn;
+                });
+
+                res.json(_.pick(muasa, 'contestant_outcome'));
+                // res.render('the-results', _.pick(muasa, 'contestant_outcome'));
             });
-
-            res.json(_.pick(muasa, 'contestant_outcome'));
-            // res.render('the-results', _.pick(muasa, 'contestant_outcome'));
-        });
+        }else{
+            res.redirect('/'); //take user back to home page
+        }
     },
 
     destroyall: function(req, res) {
