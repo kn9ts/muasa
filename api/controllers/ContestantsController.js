@@ -309,14 +309,15 @@ var ContestantsController = {
                 // cn.category = cat.category;
 
                 var xi = _.findWhere(IMAGES, {
-                    name: cn.name
+                    name: null //cn.name
                 })
                 cn.image = xi ? xi.image : '/images/gallery/10.jpg';
 
                 // cn.arrayCount = _.pluck(cn.arrayCount, 'studentemail');
                 //_.map(cn.arrayCount, function(obj) {
                 //     return _.pick(obj, 'id', 'studentemail');
-                // })
+                // });
+
                 cn.totalvotes = cn.arrayCount.length;
                 cn.againstHowManyVotes = muasa.votes_per_category[id.substring(1)];
                 cn.percentage = (cn.totalvotes/cn.againstHowManyVotes) * 100;
