@@ -71,7 +71,9 @@ var ContestantsController = {
                                 //filter the extract from filtered data for the correct contestant list
                                 var cat = _.findWhere(_.filter(CONTESTANTS, function(c) {
                                     return c.abbr == cn.abbr;
-                                }), {abbr: cn.abbr});
+                                }), {
+                                    abbr: cn.abbr
+                                });
 
                                 var votes = _.size(_.filter(results, function(re) {
                                     return re.contestantid == cn.contestantid;
@@ -79,16 +81,24 @@ var ContestantsController = {
 
                                 //extract the name of the contestant
                                 var name = cat.contestants[cid - 1];
-                                var xi = _.findWhere(IMAGES, {name: name})
-                                var image = xi ? xi.image: '/images/gallery/10.jpg';
+                                var xi = _.findWhere(IMAGES, {
+                                    name: name
+                                })
+                                var image = xi ? xi.image : '/images/gallery/10.jpg';
 
                                 var votecountpercat = castedvotespercat[cn.abbr];
 
                                 //percentage of the total votes the contestant as recieved from the total;
-                                var pc = Math.floor((votes/votecountpercat) * 100);
+                                var pc = Math.floor((votes / votecountpercat) * 100);
 
                                 //merge returned data
-                                return _.extend(cn, {name: name, votes: votes, votecount: votecountpercat, inpercent: pc, image: image});
+                                return _.extend(cn, {
+                                    name: name,
+                                    votes: votes,
+                                    votecount: votecountpercat,
+                                    inpercent: pc,
+                                    image: image
+                                });
                             });
 
 
@@ -101,12 +111,21 @@ var ContestantsController = {
                                 // }
 
                                 var cnst = _.map(a.contestants, function(b, i) {
-                                    var xi = _.findWhere(IMAGES, {name: b}); //return null if nothing is found
-                                    image = xi ? xi.image: '/images/gallery/10.jpg';
-                                    return {name: b, image: image};
+                                    var xi = _.findWhere(IMAGES, {
+                                        name: b
+                                    }); //return null if nothing is found
+                                    image = xi ? xi.image : '/images/gallery/10.jpg';
+                                    return {
+                                        name: b,
+                                        image: image
+                                    };
                                 });
                                 // a.contestants = cnst;
-                                return {category: a.category, contestants: cnst, abbr: a.abbr};
+                                return {
+                                    category: a.category,
+                                    contestants: cnst,
+                                    abbr: a.abbr
+                                };
                             })
 
                             //finally render the results
@@ -125,7 +144,7 @@ var ContestantsController = {
                             // }, 100);
 
                         }
-                        
+
                     });
 
                 });
@@ -257,32 +276,55 @@ var ContestantsController = {
         });
     },
 
-    all: function(req, res) {
+    voting_results: function(req, res) {
         var CONTESTANTS = req.session.CONTESTANTS || false;
+        var IMAGES = req.session.IMAGES || false;
         // var D = new Deferred();
         Contestants.find().done(function(err, results) {
             var con = _.uniq(_.pluck(results, 'contestantid')); // [MF, VP, CBD]
-            var orderedres = _.map(con, function(id, key) {
+
+            var muasa = {};
+            //All votes for each category
+            muasa.votes_per_category = _.countBy(results, function(n) {
+                return n.abbr;
+            });
+
+            // All cotestants in each category
+            muasa.contestants_per_cat = _.map(CONTESTANTS, function(a) {
+                return _.pick(a, 'contestants', 'abbr');
+            })
+
+            //Get all votes of all the people that voted for that contestant
+            muasa.contestant_outcome = _.map(con, function(id, key) {
                 var cn = {}
                 cn.contestant = id;
                 cn.arrayCount = _.filter(results, function(a) {
                     return id == a.contestantid;
                 })
 
+                var cat = _.first(_.filter(CONTESTANTS, function(a) {
+                    return a.abbr === id.substring(1);;
+                }));
+                cn.name = cat.contestants[parseInt(id)]
+                cn.category = cat.category;
+
+                var xi = _.findWhere(IMAGES, {
+                    name: cn.name
+                })
+                cn.image = xi ? xi.image : '/images/gallery/10.jpg';
+
                 // cn.arrayCount = _.pluck(cn.arrayCount, 'studentemail');
                 //_.map(cn.arrayCount, function(obj) {
                 //     return _.pick(obj, 'id', 'studentemail');
                 // })
                 cn.totalvotes = cn.arrayCount.length;
-
-                // var CON = _.map(CONTESTANTS, function(e) {
-                //     return _.pick(e, 'contestants', 'abbr');
-                // })
-                // cn.con = CON;
-
+                cn.againstHowManyVotes = muasa.votes_per_category[id.substring(1)];
+                cn.percentage = (cn.totalvotes/cn.againstHowManyVotes) * 100;
                 return cn;
-            })
-            res.json(orderedres);
+            });
+
+            // res.json(_.pick(muasa, 'contestant_outcome'));
+            res.render('the-results', _.pick(muasa, 'contestant_outcome'));
         });
     },
 

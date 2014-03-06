@@ -41,6 +41,7 @@ img.logo{
 .black-text{color: black;}
 .white{color: #fefefe;}
 .align-center{text-align: center;}
+.el-rounded{border: 1px solid #ddd; border-radius: 4px}
 
 /* Your own css should follow from here */
 .small-padding{padding: 0.3em;}

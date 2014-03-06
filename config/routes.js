@@ -46,7 +46,9 @@ module.exports.routes = {
     '/cookies': {
         controller: 'StudentController',
         action: 'cookies'
-    }
+    },
+
+    '/voting_results': 'ContestantsController.voting_results',
 
     /*
   // But what if you want your home page to display
