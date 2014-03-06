@@ -302,11 +302,11 @@ var ContestantsController = {
                     return id == a.contestantid;
                 })
 
-                var cat = _.first(_.filter(CONTESTANTS, function(a) {
-                    return a.abbr === id.substring(1);;
-                }));
-                cn.name = cat.contestants[parseInt(id) -1]
-                cn.category = cat.category;
+                // var cat = _.first(_.filter(CONTESTANTS, function(a) {
+                //     return a.abbr === id.substring(1);
+                // }));
+                // cn.name = cat.contestants[parseInt(id) - 1];
+                // cn.category = cat.category;
 
                 var xi = _.findWhere(IMAGES, {
                     name: cn.name
