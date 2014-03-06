@@ -115,9 +115,9 @@ block content
 												div.media-body.orange
 													h4.media-heading.orange #{a.name}
 													p: span.grey
+														| a total of
 														span.label.label-info.white #{a.votes}
-														|  out of 
-														span.label.label-success.white #{a.votecount}
+														//- span.label.label-success.white #{a.votecount}
 													div.progress.progress-striped
 														.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{a.inpercent}", aria-valuemin="0", aria-valuemax="100", style="width: #{a.inpercent}%")
 															span.sr-only #{a.inpercent} %
