@@ -84,24 +84,24 @@ block content
 									.page-header
 										h3 Category: #{x.category}
 
-								for a in x.results
-									div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.pull-left(data-contestantid="#{a.contestant}")
-										.panel.panel-warning
-											.panel-heading
-												h4(data-abbr="#{a.contestant}").grey.panel-title.smaller #{a.category}
-											.panel-body
-												div.media
-													div.pull-left
-														img.img.media-object.project-thumb(src="#{a.image}", width="96px")
-													div.media-body.orange
-														h4.media-heading.orange #{a.name}
-														h3
-															span.label.label-warning.white #{a.totalvotes} 
-															| / 
-															span.label.label-success.white #{a.againstHowManyVotes}
-														div.progress.progress-striped
-															.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{a.percentage}", aria-valuemin="0", aria-valuemax="100", style="width: #{a.percentage}%")
-																//- span.sr-only #{a.percentage} %
-																| #{a.percentage} %
+									for a in x.results
+										div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.pull-left(data-contestantid="#{a.contestant}")
+											.panel.panel-warning
+												.panel-heading
+													h4(data-abbr="#{a.contestant}").grey.panel-title.smaller #{a.category}
+												.panel-body
+													div.media
+														div.pull-left
+															img.img.media-object.project-thumb(src="#{a.image}", width="96px")
+														div.media-body.orange
+															h4.media-heading.orange #{a.name}
+															h3
+																span.label.label-warning.white #{a.totalvotes} 
+																| / 
+																span.label.label-success.white #{a.againstHowManyVotes}
+															div.progress.progress-striped
+																.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{a.percentage}", aria-valuemin="0", aria-valuemax="100", style="width: #{a.percentage}%")
+																	//- span.sr-only #{a.percentage} %
+																	| #{a.percentage} %
 														
 					- }

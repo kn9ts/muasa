@@ -20,6 +20,11 @@ var _ = require('underscore'),
     $ = require('jquery'),
     uc = _;
 
+Number.prototype.roundOf = function() {
+    var sum = (Math.round(this * 100) / 100).toFixed(2);
+    return sum;
+}
+
 var promise = require('promised-io/promise');
 Deferred = promise.Deferred; //will handle asychronous file flows
 
@@ -326,7 +331,7 @@ var ContestantsController = {
 
                     cn.totalvotes = cn.arrayCount.length;
                     cn.againstHowManyVotes = muasa.votes_per_category[cid];
-                    cn.percentage = (cn.totalvotes / cn.againstHowManyVotes) * 100;
+                    cn.percentage = ((cn.totalvotes / cn.againstHowManyVotes) * 100).roundOf();
                     return cn;
                 });
 
@@ -336,14 +341,19 @@ var ContestantsController = {
 
                 var keys = _.keys(cat_grouping);
                 results = _.map(keys, function(key) {
-                    return {category: key, results: cat_grouping[key]}
+                    return {
+                        category: key,
+                        results: cat_grouping[key]
+                    }
                 })
 
                 // results = _.pick(muasa, 'contestant_outcome');
                 // res.json({data: results});
-                res.render('the-results', {data: results});
+                res.render('the-results', {
+                    data: results
+                });
             });
-        }else{
+        } else {
             res.redirect('/'); //take user back to home page
         }
     },
