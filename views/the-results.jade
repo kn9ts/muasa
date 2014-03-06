@@ -86,7 +86,7 @@ block content
 
 								.col-xs-12.container#ccc-container(data-container="#{x.category}")
 									for a in x.results
-										div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.ccc.pull-left(data-contestantid="#{a.contestant}")
+										div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.ccc(data-contestantid="#{a.contestant}")
 											.panel.panel-warning
 												.panel-heading
 													h4(data-abbr="#{a.contestant}").grey.panel-title.smaller #{a.category}
