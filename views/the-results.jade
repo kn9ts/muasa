@@ -72,31 +72,36 @@ block content
 		div.bg-light.padding-bottom
 			.container.masonry
 				.row
-					- if(contestant_outcome.length !== 0) {
+					- if(data.length !== 0) {
 					//The ones the user has voted for, results
 					.col-xs-12(data-results="true")
 						.row
 							.page-header
 								h3 Current results of your prefered candidates
 							//loop through the candidate chosen
-							for x in contestant_outcome
-								div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.pull-left(data-contestantid="#{x.contestant}")
-									.panel.panel-warning
-										.panel-heading
-											h4(data-abbr="#{x.contestant}").grey.panel-title.smaller #{x.category}
-										.panel-body
-											div.media
-												div.pull-left
-													img.img.media-object.project-thumb(src="#{x.image}", width="96px")
-												div.media-body.orange
-													h4.media-heading.orange #{x.name}
-													h3
-														span.label.label-warning.white #{x.totalvotes} 
-														| / 
-														span.label.label-success.white #{x.againstHowManyVotes}
-													div.progress.progress-striped
-														.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{x.percentage}", aria-valuemin="0", aria-valuemax="100", style="width: #{x.percentage}%")
-															//- span.sr-only #{x.percentage} %
-															| #{x.percentage} %
+							for x in data
+								.col-xs-12.container(data-container="#{x.category}")
+									.page-header
+										h3 Category: #{x.category}
+
+								for a in x.results
+									div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.pull-left(data-contestantid="#{a.contestant}")
+										.panel.panel-warning
+											.panel-heading
+												h4(data-abbr="#{a.contestant}").grey.panel-title.smaller #{a.category}
+											.panel-body
+												div.media
+													div.pull-left
+														img.img.media-object.project-thumb(src="#{a.image}", width="96px")
+													div.media-body.orange
+														h4.media-heading.orange #{a.name}
+														h3
+															span.label.label-warning.white #{a.totalvotes} 
+															| / 
+															span.label.label-success.white #{a.againstHowManyVotes}
+														div.progress.progress-striped
+															.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{a.percentage}", aria-valuemin="0", aria-valuemax="100", style="width: #{a.percentage}%")
+																//- span.sr-only #{a.percentage} %
+																| #{a.percentage} %
 														
 					- }

@@ -330,8 +330,18 @@ var ContestantsController = {
                     return cn;
                 });
 
-                res.json(_.pick(muasa, 'contestant_outcome'));
-                // res.render('the-results', _.pick(muasa, 'contestant_outcome'));
+                var cat_grouping = _.groupBy(_.pick(muasa, 'contestant_outcome').contestant_outcome, function(a) {
+                    return a.category;
+                });
+
+                var keys = _.keys(cat_grouping);
+                results = _.map(keys, function(key) {
+                    return {category: key, results: cat_grouping[key]}
+                })
+
+                // results = _.pick(muasa, 'contestant_outcome');
+                // res.json({data: results});
+                res.render('the-results', {data: results});
             });
         }else{
             res.redirect('/'); //take user back to home page
