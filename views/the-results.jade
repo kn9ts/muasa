@@ -95,9 +95,9 @@ block content
 															img.img.media-object.project-thumb(src="#{a.image}", width="96px")
 														div.media-body.orange
 															h4.media-heading.orange #{a.name}
-															h3
-																span.label.label-info.white #{a.totalvotes} 
-																| / 
+															p: span.grey
+																span.label.label-info.white #{a.totalvotes}
+																|  out of 
 																span.label.label-success.white #{a.againstHowManyVotes}
 															div.progress.progress-striped
 																.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{a.percentage}", aria-valuemin="0", aria-valuemax="100", style="width: #{a.percentage}%")
