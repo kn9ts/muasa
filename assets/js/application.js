@@ -68,16 +68,14 @@ $(function() {
 			visibility: 'visible'
 		});
 
-		$('#projects-container').masonry({
+		$('#projects-container, .container').masonry({
 			itemSelector: '.project-item:not(.filtered)',
-			columnWidth: 250,
+			columnWidth: 200,
 			isFitWidth: true,
 			isResizable: true,
 			isAnimated: !Modernizr.csstransitions,
 			gutterWidth: 20
 		});
-
-		$('#')
 
 		scrollSpyRefresh();
 		waypointsRefresh();
