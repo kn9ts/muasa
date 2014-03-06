@@ -284,7 +284,7 @@ var ContestantsController = {
     voting_results: function(req, res) {
         //Fetch the password being passed and see if it matches or reroute to contestant page
         var password = req.param('password');
-        if (_.contains(['hassankiptoo@gmail.com', 'hassankiptoo', 'ngetich101', 'wild1s75', 'jhenetic', 'muasa075'], password)) {
+        if (_.contains(['hassankiptoo@gmail.com', 'letthepublicsee','hassankiptoo', 'ngetich101', 'wild1s75', 'jhenetic', 'muasa075'], password)) {
             var CONTESTANTS = req.session.CONTESTANTS || false;
             var IMAGES = req.session.IMAGES || false;
             // var D = new Deferred();
