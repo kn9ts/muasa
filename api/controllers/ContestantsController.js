@@ -301,31 +301,34 @@ var ContestantsController = {
                 cn.arrayCount = _.filter(results, function(a) {
                     return id == a.contestantid;
                 })
+                
+                var cid = id.replace(parseInt(id), '');
+                console.log(id, id.substring(1), cid);
 
-                // var cat = _.first(_.filter(CONTESTANTS, function(a) {
-                //     return a.abbr === id.substring(1);
-                // }));
-                // cn.name = cat.contestants[parseInt(id) - 1];
-                // cn.category = cat.category;
+                var cat = _.first(_.filter(CONTESTANTS, function(a) {
+                    return a.abbr === cid;
+                }));
+                cn.name = cat.contestants[parseInt(id) - 1];
+                cn.category = cat.category;
 
                 var xi = _.findWhere(IMAGES, {
-                    name: null //cn.name
+                    name: cn.name
                 })
                 cn.image = xi ? xi.image : '/images/gallery/10.jpg';
 
                 // cn.arrayCount = _.pluck(cn.arrayCount, 'studentemail');
                 //_.map(cn.arrayCount, function(obj) {
                 //     return _.pick(obj, 'id', 'studentemail');
-                // });
+                // })
 
                 cn.totalvotes = cn.arrayCount.length;
-                cn.againstHowManyVotes = muasa.votes_per_category[id.substring(1)];
+                cn.againstHowManyVotes = muasa.votes_per_category[cid];
                 cn.percentage = (cn.totalvotes/cn.againstHowManyVotes) * 100;
                 return cn;
             });
 
-            // res.json(_.pick(muasa, 'contestant_outcome'));
-            res.render('the-results', _.pick(muasa, 'contestant_outcome'));
+            res.json(_.pick(muasa, 'contestant_outcome'));
+            // res.render('the-results', _.pick(muasa, 'contestant_outcome'));
         });
     },
 

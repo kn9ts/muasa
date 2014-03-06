@@ -99,8 +99,11 @@ block content
 						.row
 							.page-header
 								h3 Current results of your prefered candidates
+
+							- var id = 0; //their IDs are as they are listed in the Array
 							//loop through the candidate chosen
 							for x in data.votedfor
+								- id ++
 								div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.pull-left(data-contestantid="#{id + x.abbr}")
 									.panel.panel-warning
 										.panel-heading
@@ -115,7 +118,6 @@ block content
 													div.progress.progress-striped
 														.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{x.inpercent}", aria-valuemin="0", aria-valuemax="100", style="width: #{x.inpercent}%")
 															span.sr-only #{x.inpercent} %
-														
 					- }
 
 				- if(data.categories.length !== 0) {
