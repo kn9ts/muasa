@@ -96,12 +96,16 @@ block content
 														div.media-body.orange
 															h4.media-heading.orange #{a.name}
 															h3
-																span.label.label-warning.white #{a.totalvotes} 
+																span.label.label-info.white #{a.totalvotes} 
 																| / 
 																span.label.label-success.white #{a.againstHowManyVotes}
 															div.progress.progress-striped
 																.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{a.percentage}", aria-valuemin="0", aria-valuemax="100", style="width: #{a.percentage}%")
-																	//- span.sr-only #{a.percentage} %
-																	| #{a.percentage} %
+																	span.sr-only #{a.percentage} %
+																	//- | #{a.percentage} %
+															small
+																| Received 
+																span.label.label-info #{a.percentage} %
+																|  of all votes.
 														
 					- }
