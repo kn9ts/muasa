@@ -5,7 +5,7 @@ MUASA awards voting portal
 ## Getting Started
 Management of Africa University Contest voting portal that was held on 7th March, 2014. Voting was/is officially closed as of 6th Midnight.
 
-The Result are accessible via [muasa.org/voting_results/thepublictosee](muasa.org/voting_results/thepublictosee)
+The Result are accessible via [The Public Results Page](muasa.org/voting_results/letthepublicsee)
 
 ## Release History
 Went PUBLIC on 21st February, 2014, Check it out at [http://muasa.org](http://muasa.org)
