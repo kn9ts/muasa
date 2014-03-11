@@ -520,18 +520,18 @@
 	"buffers":
 	[
 		{
-			"file": "views/contest.jade",
+			"file": "views/contest-is-over.jade",
 			"settings":
 			{
-				"buffer_size": 6541,
+				"buffer_size": 484,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/the-results.jade",
+			"file": "views/index.jade",
 			"settings":
 			{
-				"buffer_size": 3736,
+				"buffer_size": 3456,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "config/routes.js",
 			"settings":
 			{
-				"buffer_size": 5087,
+				"buffer_size": 5155,
 				"line_ending": "Unix"
 			}
 		},
@@ -640,6 +640,8 @@
 	},
 	"file_history":
 	[
+		"/Volumes/My Stuff/Websites/lab/voting/views/the-results.jade",
+		"/Volumes/My Stuff/Websites/lab/voting/views/contest.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/.git/COMMIT_EDITMSG",
 		"/Volumes/My Stuff/Websites/lab/voting/api/controllers/StudentController.js",
 		"/Volumes/My Stuff/Websites/lab/voting/views/index.jade",
@@ -685,7 +687,6 @@
 		"/Volumes/My Stuff/Websites/lab/voting/npm-debug.log",
 		"/Volumes/My Stuff/Websites/lab/voting/config/log.js",
 		"/Volumes/My Stuff/Websites/lab/voting/api/policies/contestants.js",
-		"/Volumes/My Stuff/Websites/lab/voting/views/contest.jade",
 		"/Volumes/My Stuff/Websites/lab/voting/config/controllers.js",
 		"/Volumes/My Stuff/Websites/lab/voting/config/cors.js",
 		"/Volumes/My Stuff/Websites/lab/voting/extractor.js",
@@ -766,8 +767,7 @@
 		"/Users/mac/Apps/vitumob/chrome/docs/extension.js",
 		"/Users/mac/Apps/vitumob/skin/icon64.png",
 		"/Users/mac/Apps/vitumob/chrome/content/js/d06aad07c45265f1a8a809c3618a037d3aa09767.js",
-		"/Users/mac/Apps/vitumob/chrome/content/views/modal.html",
-		"/Users/mac/Apps/vitumob/chrome/docs/background.js"
+		"/Users/mac/Apps/vitumob/chrome/content/views/modal.html"
 	],
 	"find":
 	{
@@ -788,6 +788,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"LOVE",
+			"Oops",
+			"index",
 			" \n",
 			"percentage",
 			"totalvotes",
@@ -912,10 +915,7 @@
 			"Solomon",
 			"Kimani",
 			"Edwina",
-			"Solomon",
-			"Miriam",
-			"Kimani",
-			"Theuri"
+			"Solomon"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -934,23 +934,23 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "views/contest.jade",
+					"file": "views/contest-is-over.jade",
 					"settings":
 					{
-						"buffer_size": 6541,
+						"buffer_size": 484,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3547,
-								3547
+								332,
+								332
 							]
 						],
 						"settings":
@@ -1059,141 +1059,36 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 1659.0,
+						"translation.x": 76.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "views/the-results.jade",
+					"file": "views/index.jade",
 					"settings":
 					{
-						"buffer_size": 3736,
+						"buffer_size": 3456,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2654,
-								2654
+								203,
+								0
 							]
 						],
 						"settings":
 						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2.0,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5.0,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10.0,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 182.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1204,15 +1099,15 @@
 					"file": "config/routes.js",
 					"settings":
 					{
-						"buffer_size": 5087,
+						"buffer_size": 5155,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1098,
-								1098
+								881,
+								881
 							]
 						],
 						"settings":
@@ -1326,7 +1221,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 469.0,
+						"translation.y": 419.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
