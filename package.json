@@ -1,8 +1,13 @@
 {
-    "name": "voting",
-    "private": true,
-    "version": "0.0.0",
-    "description": "a Sails application",
+    "name": "MUASA-voting-portal",
+    "description": "MUASA awards voting portal",
+    "version": "0.1.0",
+    "homepage": "https://github.com/jheneknights/muasa",
+    "author": {
+        "name": "Eugene Mutai",
+        "email": "eugenemutai@gmail.com",
+        "url": "http://knightslab.com"
+    },
     "dependencies": {
         "sails": "0.9.8",
         "grunt": "0.4.1",
@@ -13,7 +18,7 @@
         "optimist": "0.3.4",
         "underscore": ">1.0.0",
         "promised-io": "*",
-        "bcrypt":"*",
+        "bcrypt": "*",
         "jquery": "*"
     },
     "scripts": {
@@ -21,7 +26,25 @@
         "debug": "node debug app.js"
     },
     "main": "app.js",
-    "repository": "",
-    "author": "Eugene Mutai <eugenemutai@gmail.com>",
-    "license": ""
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jheneknights/muasa.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jheneknights/muasa/issues"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/jheneknights/muasa/blob/master/LICENSE-MIT"
+    }],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "devDependencies": {
+        "grunt-contrib-jshint": "~0.6.4",
+        "grunt-contrib-nodeunit": "~0.2.0",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt": "~0.4.2"
+    },
+    "keywords": []
 }

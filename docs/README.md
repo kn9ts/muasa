@@ -1,0 +1,2 @@
+# voting
+### a Sails application
