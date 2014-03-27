@@ -35,17 +35,13 @@ module.exports.routes = {
     '/': 'StudentController',
 
     '/hello': {
-        view: 'contest-is-over'
+        view: 'index'
     },
 
     '/contest': {
-        view: 'contest-is-over'
+        controller: 'ContestantsController',
+        action: 'load'
     },
-
-    // {
-    //     controller: 'ContestantsController',
-    //     action: 'load'
-    // },
 
     '/cookies': {
         controller: 'StudentController',
