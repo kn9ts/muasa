@@ -27,8 +27,8 @@ script.
 			columnWidth: function( containerWidth ) {
 				// do nothing for browsers with no media query support
 				// .container will always be 940px
-				if($(".container").width() == 940) {
-					return 300;
+				if(container.width() == 940) {
+					return 240;
 				}
 
 				var width = $(window).width();
@@ -38,7 +38,7 @@ script.
 					col = 300;
 				}
 				else if(width < 980 && width >= 768) {
-					col = 186;
+					col = 200;
 				}
 
 				return col;
