@@ -1,0 +1,89 @@
+extends includes/header
+
+block content
+	//Now create a tab for sign up or signing in
+	- 
+	div.padding-bottom
+	div.row
+		div.col-xs-12
+			div.row
+				div.col-md-offset-3.col-xs-offset-1.col-md-6.col-xs-10
+					.well.well-sm
+						ul.nav.nav-pills.na-justified
+							li.active: a(href="#sign-in", data-toggle="tab") Log in
+							li: a(href="#sign-up", data-toggle="tab") Register to vote
+
+						script(type="text/javascript").
+							$(window).load(function() {
+								setTimeout(function() {
+									$('.nav li:first-child a').click().click();
+								}, 2000)
+							});
+
+						div.tab-content
+							//Tab for signing in
+							div.tab-pane.active#sign-in
+								form(action="student/login", method="POST", role="form", style="padding: 5% 0").form-horizontal
+									.form-group
+										label.control-label.col-xs-12.col-sm-3.no-padding-right(for="emailaddress") 
+											| Email Addr.
+										div.col-xs-12.col-sm-7
+											.clearfix
+												input#emailaddress.form-control(type="email", name="emailaddress", placeholder="Your email address...", required)
+
+									.form-group
+										label.control-label.col-xs-12.col-sm-3.no-padding-right(for="encryptedPassword") 
+											| Password
+										div.col-xs-12.col-sm-7
+											.clearfix
+												input#encryptedPassword-login.form-control(type="password", name="encryptedPassword", placeholder="Your password", required)
+									.form-group
+										.col-sm-offset-3.col-sm-3
+											button.btn.btn-primary.btn-md Log In
+
+							//Tab for registering
+							div.tab-pane#sign-up
+								form(action="student/signup", method="POST", role="form", style="padding: 5% 0").form-horizontal
+									.form-group
+										label.control-label.col-xs-12.col-sm-3.no-padding-right(for="fullnames") 
+											| Full Name
+										div.col-xs-12.col-sm-7
+											.clearfix
+												input#fullnames.form-control(type="text", name="fullnames", placeholder="eg. Eugene Mutai")
+
+									.form-group
+										label.control-label.col-xs-12.col-sm-3.no-padding-right(for="idno") 
+											| ID No.
+										div.col-xs-12.col-sm-7
+											.clearfix
+												input#idno.form-control(type="text", name="idno", placeholder="Your ID No.")
+
+									.form-group
+										label.control-label.col-xs-12.col-sm-3.no-padding-right(for="phonenumber") 
+											| Mobile No.
+										div.col-xs-12.col-sm-7
+											.clearfix
+												input#phonenumber.form-control(type="text", name="phonenumber", placeholder="eg. 0723001575 or 254723001575")
+
+									.form-group
+										label.control-label.col-xs-12.col-sm-3.no-padding-right(for="emailaddress") 
+											| Email Addr.
+										div.col-xs-12.col-sm-7
+											.clearfix
+												input#emailaddress.form-control(type="email", name="emailaddress", placeholder="Your email address...")
+
+									.form-group
+										label.control-label.col-xs-12.col-sm-3.no-padding-right(for="encryptedPassword") 
+											| Password
+										div.col-xs-12.col-sm-7
+											.clearfix
+												input#encryptedPassword-signup.form-control(type="password", name="encryptedPassword", placeholder="Your password")
+												input(type="hidden", name="_csrf", value="true")
+									.form-group
+										.col-sm-offset-3.col-sm-3
+											button.btn.btn-primary.btn-md Register
+
+
+		div.col-sm-6.col-sm-offset-3.scrollimation.fade-right.in.white.align-center
+			h2.center Management University of Africa Awards
+			

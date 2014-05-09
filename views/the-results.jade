@@ -1,0 +1,112 @@
+extends includes/header
+
+block content
+	div.jumbotron
+		div.container.bg-transparent(style="border-top: none; border-bottom: none")
+			div.row
+				div.col-xs-offset-2.col-sm-offset-4.col-sm-6.col-md-offset-9.col-md-3.col-xs-8
+					//- .btn-group.btn-group-lg
+						//- a.btn.btn-danger View results
+					a.pull-right.btn.btn-info.btn-sm(href="/student/logout") Log out
+			
+			//The school's logo
+			img.img-center.img-responsive.header-logo.hidden-xs(src="/images/logo.png", alt="MUAS").hidden-sm
+			//Display the introduction message
+			div.message-box.clearfix
+				.first-line: p Management University of Africa Awards
+				.second-line.flexslider.home-slider
+					ul.slides
+						li: p Student of the Year
+						li: p Most Popular Student
+						li: p Best Lecturer
+						li: p Best Department
+						li: p Consistent Best Dresser
+						li: p MUA Staff
+						li: p Sports Person
+
+	section#portfolio
+		div.bg-light
+			.container
+				div.section-header.scrollimation.fade-up.in
+					div.section-icon: i.fa.fa-trophy
+					h1.section-title The Nominees
+					p.section-description.lead Non-votable categories
+
+				div.row
+					div.col-sm-4.col-sm-12
+						div.row
+							div.col-sm-3.col-xs-12
+								img(src="/images/gallery/10.jpg").img-responsive.img-thumbnail
+
+							div.col-sm-9.col-xs-12
+								h2 Dean Award
+								blockquote
+
+					div.col-md-4.col-sm-12
+						div.row
+							div.col-sm-3.col-xs-12
+								img(src="/images/gallery/10.jpg").img-responsive.img-thumbnail
+
+							div.col-sm-9.col-xs-12
+								h2 Suprise Award
+								blockquote
+
+					div.col-md-4.col-sm-12
+						div.row
+							div.col-sm-3.col-xs-12
+								img(src="/images/gallery/10.jpg").img-responsive.img-thumbnail
+
+							div.col-sm-9.col-xs-12
+								h2 Academic Award
+								blockquote
+
+
+		div.bg-light
+			.container
+				div.section-header.scrollimation.fade-up.in
+					//- div.section-icon: i.fa.fa-suitcase
+					h1.section-title The Results
+					p.section-description.lead Who do you think is the best?
+
+					//- #preview-content
+		div.bg-light.padding-bottom
+			.container.masonry
+				.row
+					- if(data.length !== 0) {
+					//The ones the user has voted for, results
+					.col-xs-12(data-results="true")
+						.row#cat-container
+							.page-header
+								h3 Current results of your prefered candidates
+							//loop through the candidate chosen
+							for x in data
+								.col-xs-12.container(data-container="#{x.category}")
+									.page-header
+										h3 Category: #{x.category}
+
+								.col-xs-12.container#ccc-container(data-container="#{x.category}")
+									for a in x.results
+										div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.ccc(data-contestantid="#{a.contestant}")
+											.panel.panel-warning
+												.panel-heading
+													h4(data-abbr="#{a.contestant}").grey.panel-title.smaller #{a.category}
+												.panel-body
+													div.media
+														div.pull-left
+															img.img.media-object.project-thumb(src="#{a.image}", width="96px")
+														div.media-body.orange
+															h4.media-heading.orange #{a.name}
+															p: span.grey
+																span.label.label-info.white #{a.totalvotes}
+																|  out of 
+																span.label.label-success.white #{a.againstHowManyVotes}
+															div.progress.progress-striped
+																.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{a.percentage}", aria-valuemin="0", aria-valuemax="100", style="width: #{a.percentage}%")
+																	span.sr-only #{a.percentage} %
+																	//- | #{a.percentage} %
+															small
+																| Received 
+																span.label.label-info #{a.percentage} %
+																|  of all votes.
+														
+					- }
