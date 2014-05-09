@@ -99,34 +99,36 @@ block content
 						.row
 							.page-header
 								h3 Current results of your prefered candidates
-
-							- var id = 0; //their IDs are as they are listed in the Array
-							//loop through the candidate chosen
-							for a in data.votedfor
-								- id ++
-								div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.pull-left(data-contestantid="#{id + a.abbr}")
-									.panel.panel-warning
-										.panel-heading
-											h4(data-abbr="#{a.abbr}").grey.panel-title.smaller #{a.category}
-										.panel-body
-											div.media.clearfix
-												div.pull-left
-													img.img.media-object.project-thumb(src="#{a.image}", width="96px")
-												div.media-body.orange
-													h4.media-heading.orange #{a.name}
-													p: span.grey
-														| Has a total of 
-														span.label.label-info.white #{a.votes}
-														|  votes
-														//- span.label.label-success.white #{a.votecount}
-													div.progress.progress-striped
-														.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{a.inpercent}", aria-valuemin="0", aria-valuemax="100", style="width: #{a.inpercent}%")
-															span.sr-only #{a.inpercent} %
-															//- | #{a.inpercent} %
-													small
-														| Received 
-														span.label.label-info #{a.inpercent} %
-														|  of all votes.
+							
+							.row
+								.col-xs-12#ccc-container
+									- var id = 0; //their IDs are as they are listed in the Array
+									//loop through the candidate chosen
+									for a in data.votedfor
+										- id ++
+										div.col-xs-12.col-sm-4.col-md-3.on-hover-effect.contestant.pull-lef.ccc(data-contestantid="#{id + a.abbr}")
+											.panel.panel-warning
+												.panel-heading
+													h4(data-abbr="#{a.abbr}").grey.panel-title.smaller #{a.category}
+												.panel-body
+													div.media.clearfix
+														div.pull-left
+															img.img.media-object.project-thumb(src="#{a.image}", width="96px")
+														div.media-body.orange
+															h4.media-heading.orange #{a.name}
+															p: span.grey
+																| Has a total of 
+																span.label.label-info.white #{a.votes}
+																|  votes
+																//- span.label.label-success.white #{a.votecount}
+															div.progress.progress-striped
+																.progress-bar.progress-bar-success(role="progressbar", aria-valuenow="#{a.inpercent}", aria-valuemin="0", aria-valuemax="100", style="width: #{a.inpercent}%")
+																	span.sr-only #{a.inpercent} %
+																	//- | #{a.inpercent} %
+															small
+																| Received 
+																span.label.label-info #{a.inpercent} %
+																|  of all votes.
 					- }
 
 				- if(data.categories.length !== 0) {
